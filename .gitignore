@@ -25,3 +25,5 @@ yarn-error.log*
 # JetBrains 
 .idea
 *.iml
+
+.DS_Store
