@@ -1,0 +1,40 @@
+nav {
+  width: 80%;
+  margin: 16px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img#logo {
+    height: 48px;
+    width: 48px;
+  }
+
+  ul.nav {
+    list-style-type: none;
+
+    li.nav-item {
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+      line-height: 48px;
+      text-align: center;
+      vertical-align: center;
+      text-decoration: none;
+
+      a, a:visited, a:active {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          cursor: pointer;
+          color: #e1e1e1;
+        }
+
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

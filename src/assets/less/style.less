@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  @import 'nav';
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span.footer {
+  display: inline-block;
+  position: fixed;
+  text-align: center;
+  bottom: 8px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}

@@ -1,38 +1,25 @@
 {
   "name": "kfsite",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Kratzen und Fauchen Website",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "assets": "^3.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "less": "^3.11.3",
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": ""
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@storybook/addon-actions": "^5.0.8",
-    "@storybook/addon-knobs": "^5.0.8",
-    "@storybook/addon-links": "^5.0.8",
-    "@storybook/addon-viewport": "^5.0.8",
-    "@storybook/addons": "^5.0.8",
-    "@storybook/react": "^5.0.8",
-    "babel-loader": "^8.0.5",
-    "node-sass": "^4.11.0"
-  }
+  "author": "",
+  "license": "MIT"
 }
