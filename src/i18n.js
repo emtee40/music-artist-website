@@ -22,6 +22,8 @@ i18n
         fallbackLng: 'en',
         debug: true,
 
+        ns: ['common', 'artists'],
+        defaultNS: 'common',
         backend: {
             // path where resources get loaded from, or a function
             // returning a path:

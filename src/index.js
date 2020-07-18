@@ -15,8 +15,6 @@ const matomo = new ReactPiwik({
     phpFilename: 'matomo.php'
 });
 
-//TODO: implement i18n for artist bio
-
 ReactPiwik.push(['trackPageView']);
 ReactDOM.render(
     <Suspense fallback={'loading'}>
