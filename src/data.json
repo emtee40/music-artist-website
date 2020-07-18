@@ -1,0 +1,896 @@
+{
+  "releases": [
+    {
+      "title": "Serenity",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "upc-ean": 5054960557529,
+      "genres": [
+        "Techno",
+        "House"
+      ],
+      "date": "2018-02-03",
+      "copyright": "2017 Lukas Fülling",
+      "tracks": [
+        {
+          "title": "Serenity",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1809804",
+          "copyright": "2017 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1343829946",
+        "spotify": "https://open.spotify.com/track/5YW2A9DMZPBrp7LJi1cWWx",
+        "youtube": "https://www.youtube.com/watch?v=ziod6JOFNA0",
+        "deezer": "https://www.deezer.com/track/457583432",
+        "soundcloud": "https://soundcloud.com/1erk/serenity",
+        "amazon": "https://music.amazon.com/albums/B079K2T1KQ?trackAsin=B079K1W233",
+        "tidal": "https://listen.tidal.com/track/84194081",
+        "napster": "https://napster.com/track/tra.299063498",
+        "yandex": "https://music.yandex.ru/track/59313451"
+      }
+    },
+    {
+      "title": "Truth",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2017 Lukas Fülling",
+      "upc-ean": 5054960557536,
+      "genres": [
+        "Techno",
+        "Trance"
+      ],
+      "date": "2018-02-09",
+      "tracks": [
+        {
+          "title": "Truth",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1809824",
+          "copyright": "2017 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1345568444",
+        "spotify": "https://open.spotify.com/track/1XoyBKI43kkSQRpA79iZhy",
+        "youtube": "https://www.youtube.com/watch?v=ipovkNXqmdk",
+        "deezer": "https://www.deezer.com/track/459067662",
+        "soundcloud": "https://soundcloud.com/1erk/truth-1",
+        "amazon": "https://music.amazon.com/albums/B079MWLW81?trackAsin=B079NGDVTH",
+        "tidal": "https://listen.tidal.com/track/108696973",
+        "napster": "https://napster.com/track/tra.299559227",
+        "yandex": "https://music.yandex.ru/track/52621556"
+      }
+    },
+    {
+      "title": "No Way Around",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "upc-ean": 5054960555204,
+      "genres": [
+        "Chill Out",
+        "Downtempo"
+      ],
+      "date": "2018-02-01",
+      "copyright": "2016 Lukas Fülling",
+      "tracks": [
+        {
+          "title": "No Way Around",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1809841",
+          "copyright": "2016 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1343794053",
+        "spotify": "https://open.spotify.com/track/76tOrw2j3VHwPiK4hUpiWJ",
+        "youtube": null,
+        "deezer": "https://www.deezer.com/track/457558262",
+        "soundcloud": "https://soundcloud.com/1erk/no-way-around",
+        "amazon": "https://music.amazon.com/albums/B079K4J5N1?trackAsin=B079JZCXC5",
+        "tidal": "https://listen.tidal.com/track/84194128",
+        "napster": "https://napster.com/track/tra.299052079",
+        "yandex": null
+      }
+    },
+    {
+      "title": "Hashes",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "upc-ean": 5054960556225,
+      "genres": [
+        "Chill Out",
+        "Downtempo"
+      ],
+      "date": "2018-02-02",
+      "copyright": "2016 Lukas Fülling",
+      "tracks": [
+        {
+          "title": "Hashes",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810172",
+          "copyright": "2016 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1343324760",
+        "spotify": "https://open.spotify.com/track/4Sw0JLVOuJOD81dZF0Iau6",
+        "youtube": "https://www.youtube.com/watch?v=Qzm71nxwQIU",
+        "deezer": "https://www.deezer.com/track/458459692",
+        "soundcloud": "https://soundcloud.com/1erk/hashes",
+        "amazon": "https://music.amazon.com/albums/B079J63F3G?trackAsin=B079JG8B1N",
+        "tidal": "https://listen.tidal.com/track/84299948",
+        "napster": "https://napster.com/track/tra.298918708",
+        "yandex": null
+      }
+    },
+    {
+      "title": "Pioneer",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "upc-ean": 5054960558861,
+      "genres": [
+        "Chill Out",
+        "Downtempo"
+      ],
+      "date": "2014-06-04",
+      "copyright": "2014 Lukas Fülling",
+      "tracks": [
+        {
+          "title": "Pioneer",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810903",
+          "copyright": "2014 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1344841028",
+        "spotify": "https://open.spotify.com/track/0Z00t9oE6VsK975wkWkdxN",
+        "youtube": "https://www.youtube.com/watch?v=ayhl0Ky51hM",
+        "deezer": "https://www.deezer.com/track/458460892",
+        "soundcloud": "https://soundcloud.com/1erk/pioneer",
+        "amazon": "https://music.amazon.com/albums/B079M126HB?trackAsin=B079LY2HYR",
+        "tidal": "https://listen.tidal.com/track/84299947",
+        "napster": "https://napster.com/track/tra.299345280",
+        "yandex": null
+      }
+    },
+    {
+      "title": "Spacewalk",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2014 Lukas Fülling",
+      "upc-ean": 5054960559066,
+      "genres": [
+        "Chill Out",
+        "Downtempo"
+      ],
+      "date": "2014-06-17",
+      "tracks": [
+        {
+          "title": "Pioneer",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810964",
+          "copyright": "2014 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Hashes",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810965",
+          "copyright": "2014 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Struu",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810966",
+          "copyright": "2014 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Rose",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810967",
+          "copyright": "2014 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Shining",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1810968",
+          "copyright": "2014 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1344835160?mt=1&app=music&at=1000lHKX",
+        "spotify": "https://open.spotify.com/album/6RdPSkbdHeDiQKnN7weBRs",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_ns3KGYBodJgQsAyFfeAUFtOzmwbGJ28cw",
+        "deezer": "https://www.deezer.com/album/56445922",
+        "soundcloud": "https://soundcloud.com/1erk/sets/spacewalk",
+        "amazon": "https://music.amazon.com/albums/B079MF1KRH?do=play",
+        "tidal": "https://listen.tidal.com/album/84299946",
+        "napster": "https://napster.com/album/alb.299332172",
+        "yandex": null
+      }
+    },
+    {
+      "title": "Supernova",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2018 Lukas Fülling",
+      "upc-ean": 5054960562103,
+      "genres": [
+        "House",
+        "Techno"
+      ],
+      "date": "2018-02-07",
+      "tracks": [
+        {
+          "title": "Supernova",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1812228",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1345550287",
+        "spotify": "https://open.spotify.com/track/5lYvkAIFQlj3kcvbrsjD8b",
+        "youtube": "https://www.youtube.com/watch?v=VT0GAABuhbg",
+        "deezer": "https://www.deezer.com/track/459008752",
+        "soundcloud": "https://soundcloud.com/1erk/supernova",
+        "amazon": "https://music.amazon.com/albums/B079NGT2QX?trackAsin=B079MY2VW6",
+        "tidal": "https://listen.tidal.com/track/84402388",
+        "napster": "https://napster.com/track/tra.299559193",
+        "yandex": null
+      }
+    },
+    {
+      "title": "Cravings",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2018 Lukas Fülling",
+      "upc-ean": 5054960775510,
+      "genres": [
+        "Techno",
+        "Trance"
+      ],
+      "date": "2018-06-26",
+      "tracks": [
+        {
+          "title": "Cravings",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1870206",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1400507363",
+        "spotify": "https://open.spotify.com/track/3VaQf5jyNLTxvfBtJZxIMX",
+        "youtube": "https://www.youtube.com/watch?v=-d1I7dZENN8",
+        "deezer": "https://www.deezer.com/track/515165492",
+        "soundcloud": "https://soundcloud.com/1erk/cravings",
+        "amazon": "https://music.amazon.com/albums/B07DV7GYZF?trackAsin=B07DTZPHDP",
+        "tidal": "https://listen.tidal.com/track/108696971",
+        "napster": "https://napster.com/track/tra.317854909",
+        "yandex": "https://music.yandex.ru/track/41732737"
+      }
+    },
+    {
+      "title": "Tumble",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2018 Lukas Fülling",
+      "upc-ean": 5054960784727,
+      "genres": [
+        "Techno",
+        "House"
+      ],
+      "date": "2018-07-03",
+      "tracks": [
+        {
+          "title": "Tumble",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1873779",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/_/1403245438",
+        "spotify": "https://open.spotify.com/track/1Ru0bh8yJCWvckMuIw7M70",
+        "youtube": "https://www.youtube.com/watch?v=H6JpjPzghWA",
+        "deezer": "https://www.deezer.com/track/674182112",
+        "soundcloud": "https://soundcloud.com/1erk/tumble",
+        "amazon": "https://music.amazon.com/albums/B07DZZMYYH?trackAsin=B07F17HTQH",
+        "tidal": "https://listen.tidal.com/track/90970940",
+        "napster": "https://napster.com/track/tra.318664276",
+        "yandex": "https://music.yandex.ru/track/41836030"
+      }
+    },
+    {
+      "title": "no manners",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2018 Lukas Fülling",
+      "upc-ean": 5054960853751,
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2018-08-21",
+      "tracks": [
+        {
+          "title": "no manners",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21800412",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/no-manners-single/1426083979",
+        "spotify": "https://open.spotify.com/track/3vHtGPnftS45o5MM2p0Ldh",
+        "youtube": "https://www.youtube.com/watch?v=TpIK_pDTum8",
+        "deezer": "https://www.deezer.com/track/674182122",
+        "soundcloud": "https://soundcloud.com/1erk/no-manners-1",
+        "amazon": "https://music.amazon.com/albums/B07GF9TQ3T?trackAsin=B07GFJ9HNH",
+        "tidal": "https://listen.tidal.com/track/108696970",
+        "napster": "https://napster.com/track/tra.324922448",
+        "yandex": "https://music.yandex.ru/track/42728415"
+      }
+    },
+    {
+      "title": "Turmoil",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2018 Lukas Fülling",
+      "upc-ean": 5059033058316,
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2018-11-27",
+      "tracks": [
+        {
+          "title": "Turmoil",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21882182",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Serenity",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Mixable Mix",
+          "isrc": "GBMA21882183",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/turmoil-single/1443472327",
+        "spotify": "https://open.spotify.com/album/44yEi1FKBTHMDw14r6VX3S",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_nvsvCDEps4I7eHUUKZmwTEQqYDl3evJlc",
+        "deezer": "https://www.deezer.com/album/79208002",
+        "soundcloud": null,
+        "amazon": "https://music.amazon.com/albums/B07KPJ2KML?do=play",
+        "tidal": null,
+        "napster": "https://napster.com/album/alb.337462238",
+        "yandex": "https://music.yandex.ru/album/6097390"
+      }
+    },
+    {
+      "title": "Starshine",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033284913,
+      "genres": [
+        "Electro",
+        "Chill Out"
+      ],
+      "date": "2019-02-06",
+      "tracks": [
+        {
+          "title": "Starshine",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21902273",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/starshine-single/1451322839",
+        "spotify": "https://open.spotify.com/track/5lk08DdsKdQmdHjZzWDC6P",
+        "youtube": "https://www.youtube.com/watch?v=x6Z6c1gJIn0",
+        "deezer": "https://www.deezer.com/track/626468642",
+        "soundcloud": "https://soundcloud.com/1erk/starshine-1",
+        "amazon": "https://music.amazon.com/albums/B07NBSQQ7C?trackAsin=B07NBJG2HH",
+        "tidal": "https://listen.tidal.com/track/108696967",
+        "napster": "https://napster.com/track/tra.350449931",
+        "yandex": "https://music.yandex.ru/track/49347227"
+      }
+    },
+    {
+      "title": "Bright Blindness",
+      "artists": [
+        "Padan"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "Paula Fülling, Daniel Tölle",
+      "upc-ean": 5059033308220,
+      "genres": [
+        "Pop",
+        "Electronic"
+      ],
+      "date": "2019-02-18",
+      "tracks": [
+        {
+          "title": "Bright Blindness",
+          "artists": [
+            "Padan"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21921431",
+          "copyright": "2019 Paula Fülling, Daniel Tölle",
+          "recording": "Paula Fülling, Daniel Tölle"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/bright-blindness-single/1452777200",
+        "spotify": "https://open.spotify.com/track/1Y1laFblkUoQnwTkiPJyxr",
+        "youtube": "https://www.youtube.com/watch?v=6WLH239dPX0",
+        "deezer": "https://www.deezer.com/track/632427472",
+        "soundcloud": null,
+        "amazon": "https://music.amazon.com/albums/B07NS2RJY9?trackAsin=B07NS2QLH2",
+        "tidal": "https://listen.tidal.com/track/104065653",
+        "napster": "https://napster.com/track/tra.353806286",
+        "yandex": "https://music.yandex.ru/track/50021667"
+      }
+    },
+    {
+      "title": "Remnant",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033335547,
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2019-02-28",
+      "tracks": [
+        {
+          "title": "Remnant",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21931312",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/remnant-single/1453882907",
+        "spotify": "https://open.spotify.com/track/5GfJK8Aq86ZNI8LD6tuWqX",
+        "youtube": "https://www.youtube.com/watch?v=_nsEnEDguCI",
+        "deezer": "https://www.deezer.com/track/636703902",
+        "soundcloud": "https://soundcloud.com/1erk/remnant",
+        "amazon": "https://music.amazon.com/albums/B07P39NH8W?trackAsin=B07NZZD3V9",
+        "tidal": "https://listen.tidal.com/track/104576637",
+        "napster": "https://napster.com/track/tra.355873304",
+        "yandex": "https://music.yandex.ru/track/50360333"
+      }
+    },
+    {
+      "title": "Plume",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033345874,
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2019-03-09",
+      "tracks": [
+        {
+          "title": "Plume",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21934370",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/plume-single/1455249800",
+        "spotify": "https://open.spotify.com/track/4djQ2Lb5jBcBOMeQu4hYEW",
+        "youtube": "https://www.youtube.com/watch?v=vCH1ywkyJrc",
+        "deezer": "https://www.deezer.com/track/644283472",
+        "soundcloud": "https://soundcloud.com/1erk/plume",
+        "amazon": "https://music.amazon.com/albums/B07PGMC3B6?trackAsin=B07PDK1F1Z",
+        "tidal": "https://listen.tidal.com/track/105337896",
+        "napster": "https://napster.com/track/tra.359023060",
+        "yandex": "https://music.yandex.ru/track/50869068"
+      }
+    },
+    {
+      "title": "Encounters",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "KRatzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033373648,
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2019-03-18",
+      "tracks": [
+        {
+          "title": "Encounters",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21941398",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/encounters-single/1456006402",
+        "spotify": "https://open.spotify.com/track/32vwVSGxwW24jv0yTIelLU",
+        "youtube": "https://www.youtube.com/watch?v=YLdcT7mOevk",
+        "deezer": "https://www.deezer.com/track/647959162",
+        "soundcloud": "https://soundcloud.com/1erk/encounters-1",
+        "amazon": "https://music.amazon.com/albums/B07PM9K2KC?trackAsin=B07PQGV32R",
+        "tidal": "https://listen.tidal.com/track/105758658",
+        "napster": "https://napster.com/track/tra.360539170",
+        "yandex": "https://music.yandex.ru/track/51102990"
+      }
+    },
+    {
+      "title": "Coast",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033443334,
+      "genres": [
+        "Techno",
+        "Electro"
+      ],
+      "date": "2019-05-04",
+      "tracks": [
+        {
+          "title": "Coast",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21959347",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Encounters",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21941398",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Starshine",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21902273",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Remnant",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21931312",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Tumble",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1873779",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "no manners",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBMA21959355",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Cravings",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1870206",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Serenity",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Mixable Mix",
+          "isrc": "GBMA21882183",
+          "copyright": "2018 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Truth",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1809824",
+          "copyright": "2017 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/coast/1462294486",
+        "spotify": "https://open.spotify.com/album/5NeVbnAYoag8HXWQ4Pb5xX",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kk9PDo0ZEyYe1sBWWdUx2mATXZrpAp-8E",
+        "deezer": "https://www.deezer.com/album/95546342",
+        "soundcloud": "https://soundcloud.com/1erk/sets/coast",
+        "amazon": "https://music.amazon.com/albums/B07RJ863TT?do=play",
+        "tidal": "https://listen.tidal.com/album/108696964",
+        "napster": "https://napster.com/album/alb.372936445",
+        "yandex": "https://music.yandex.ru/album/7416951"
+      }
+    },
+    {
+      "title": "Capture Burn",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033763067,
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2019-08-23",
+      "tracks": [
+        {
+          "title": "Capture Burn",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP1929813",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/capture-burn-single/1477082262",
+        "spotify": "https://open.spotify.com/track/0gN7HgzhEzxqjiEHzsO26d",
+        "youtube": "https://www.youtube.com/watch?v=2awUxQ-V39k",
+        "deezer": "https://www.deezer.com/track/735584452",
+        "soundcloud": "https://soundcloud.com/1erk/capture-burn",
+        "amazon": "https://music.amazon.com/albums/B07WNMD488?trackAsin=B07WR1XCG2",
+        "tidal": "https://listen.tidal.com/track/115814606",
+        "napster": "https://napster.com/track/tra.400259928",
+        "yandex": "https://music.yandex.ru/track/56782822"
+      }
+    },
+    {
+      "title": "Metro (Lerk Remix)",
+      "artists": [
+        "Alex Sleepy",
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2019 Lukas Fülling",
+      "upc-ean": 5059033949263,
+      "genres": [
+        "Techno",
+        "Deep House"
+      ],
+      "date": "2019-11-09",
+      "tracks": [
+        {
+          "title": "Metro",
+          "artists": [
+            "Alex Sleepy",
+            "Lerk"
+          ],
+          "version": "Lerk Remix",
+          "isrc": "GBLFP1979435",
+          "copyright": "2019 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/metro-lerk-remix-single/1486592981",
+        "spotify": "https://open.spotify.com/track/1K5xUX4eOPH0zIWCLd0EVT",
+        "youtube": "https://www.youtube.com/watch?v=gfTFe2Rs_jQ",
+        "deezer": "https://www.deezer.com/track/798407372",
+        "soundcloud": "https://soundcloud.com/1erk/metro-remix",
+        "amazon": "https://music.amazon.com/albums/B08141BLGN?trackAsin=B08141SV7S",
+        "tidal": null,
+        "napster": "https://napster.com/track/tra.420775571",
+        "yandex": null
+      }
+    },
+    {
+      "title": "Lonely Dance",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2020 Lukas Fülling",
+      "upc-ean": 5059435558612,
+      "genres": [
+        "Techno",
+        "House"
+      ],
+      "date": "2020-04-30",
+      "tracks": [
+        {
+          "title": "Lonely Dance",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "GBLFP2033494",
+          "copyright": "2020 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/de/album/lonely-dance-single/1509662046",
+        "spotify": "https://open.spotify.com/track/2cvitufbJnwK16VUmaBfZu",
+        "youtube": "https://www.youtube.com/watch?v=5Wrn3ip5Xgk",
+        "deezer": "https://www.deezer.com/track/939301542",
+        "soundcloud": "https://soundcloud.com/1erk/lonely-dance",
+        "amazon": "https://music.amazon.com/albums/B087L1LQ9P?trackAsin=B087KWL9Q9",
+        "tidal": "https://listen.tidal.com/track/138688251",
+        "napster": "https://napster.com/track/tra.473752414",
+        "yandex": "https://music.yandex.ru/track/65136911"
+      }
+    }
+  ]
+}
