@@ -4,12 +4,13 @@ import Cover from "./cover";
 
 function ReleaseLink(props) {
 
+    const t = props.t;
     const release = props.release;
 
     return (
         <div className={'release-link'}>
             <Link to={'/release/' + release.ean}>
-                <Cover release={release}/>
+                <Cover t={t} release={release}/>
                 <span className={'release-title'}>{release.artists.join(', ')} - {release.title}</span>
             </Link>
         </div>

@@ -1,0 +1,21 @@
+{
+  "welcome-text": "This page is currently under construction!",
+  "logo-description": "Kratzen und Fauchen Logo",
+  "home": "Home",
+  "about": "About",
+  "artists": "Artists",
+  "releases": "Releases",
+  "contact": "Contact",
+  "loading": "Loading",
+  "cover-desc-pre": "Cover art for ",
+  "cover-desc-mid": " by ",
+  "artist-img-desc-pre": "Artist image for ",
+  "meta": "Meta",
+  "title": "Title",
+  "genres": "Genres",
+  "copyright": "Copyright",
+  "release-date": "Release Date",
+  "tracks": "Tracks",
+  "isrc": "ISRC",
+  "sound-recording": "Sound Recording"
+}

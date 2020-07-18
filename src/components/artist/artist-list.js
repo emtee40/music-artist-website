@@ -3,6 +3,7 @@ import {toSlug} from "../../util";
 
 function ArtistList(props) {
 
+    const t = props.t;
     const artists = props.artists;
     const data = props.data;
 

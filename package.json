@@ -4,6 +4,9 @@
   "description": "Kratzen und Fauchen Website",
   "dependencies": {
     "assets": "^3.0.1",
+    "i18next": "^19.6.2",
+    "i18next-browser-languagedetector": "^5.0.0",
+    "i18next-http-backend": "^1.0.17",
     "lib": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -18,6 +21,7 @@
     "parcel-plugin-browserconfig": "^1.0.5",
     "parcel-plugin-change-file": "^1.3.0",
     "parcel-plugin-static-files-copy": "^2.4.3",
+    "react-i18next": "^11.7.0",
     "sass": "^1.26.10"
   },
   "scripts": {

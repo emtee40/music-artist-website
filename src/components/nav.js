@@ -2,27 +2,28 @@ import React from 'react';
 import KFLogo from '../assets/images/logo.svg';
 import {Link, NavLink} from "react-router-dom";
 
-function Nav() {
+function Nav(props) {
+    const t = props.t;
     return (
         <nav>
             <Link to={'/'}>
-                <KFLogo id={'logo'} alt="Kratzen und Fauchen Logo"/>
+                <KFLogo id={'logo'} alt={t('logo-description')}/>
             </Link>
             <ul className={'nav'}>
                 <li className="nav-item">
-                    <NavLink activeClassName={'active'} exact={true} to={'/'}>Home</NavLink>
+                    <NavLink activeClassName={'active'} exact={true} to={'/'}>{t('home')}</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink activeClassName={'active'} to={'/about'}>About</NavLink>
+                    <NavLink activeClassName={'active'} to={'/about'}>{t('about')}</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink activeClassName={'active'} to={'/artists'}>Artists</NavLink>
+                    <NavLink activeClassName={'active'} to={'/artists'}>{t('artists')}</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink activeClassName={'active'} to={'/releases'}>Releases</NavLink>
+                    <NavLink activeClassName={'active'} to={'/releases'}>{t('releases')}</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink activeClassName={'active'} to={'/contact'}>Contact</NavLink>
+                    <NavLink activeClassName={'active'} to={'/contact'}>{t('contact')}</NavLink>
                 </li>
             </ul>
         </nav>

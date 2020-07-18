@@ -7,9 +7,10 @@ import ReleasePage from "./release-page";
 import ArtistPage from "./artist-page";
 import ArtistsPage from "./artists-page";
 import {format} from "date-fns";
-import ScrollToTop from "../components/scroll-to-top";
+import {useTranslation} from 'react-i18next';
 
 function App() {
+    const {t} = useTranslation();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(undefined);
     const [data, setData] = useState(undefined);
@@ -32,33 +33,34 @@ function App() {
 
     return (
         <div>
-            <Nav/>
+            <Nav t={t}/>
             {(data && <Switch>
                 <Route path={'/'} exact={true}>
                     <div className="wrapper">
-                        <p>This page is currently under construction!</p>
+                        {/* TODO: add widget for latest releases and artists */}
+                        <p>{t('welcome-text')}</p>
                     </div>
                 </Route>
                 <Route path={'/about'} exact={true}>
-                    <Loader/>
+                    <Loader t={t}/>
                 </Route>
                 <Route path={'/releases'} exact={true}>
-                    <ReleasesPage data={data}/>
+                    <ReleasesPage t={t} data={data}/>
                 </Route>
                 <Route path={'/artists'} exact={true}>
-                    <ArtistsPage data={data}/>
+                    <ArtistsPage t={t} data={data}/>
                 </Route>
                 <Route path={'/release/:ean'}
                        render={({match}) => {
-                           return match.params.ean && <ReleasePage data={data} ean={match.params.ean}/>; //TODO render error in 'or'
+                           return match.params.ean && <ReleasePage t={t} data={data} ean={match.params.ean}/>; //TODO render error in 'or'
                        }}
                        exact={true}/>
                 <Route path={'/artist/:slug'}
                        render={({match}) => {
-                           return match.params.slug && <ArtistPage data={data} slug={match.params.slug}/>; //TODO render error in 'or'
+                           return match.params.slug && <ArtistPage t={t} data={data} slug={match.params.slug}/>; //TODO render error in 'or'
                        }}
                        exact={true}/>
-            </Switch>) || <Loader/>}
+            </Switch>) || <Loader t={t}/>}
             <span className="footer">&copy; {format(new Date(), 'yyyy')} Kratzen und Fauchen</span>
         </div>
     );

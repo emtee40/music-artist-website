@@ -6,6 +6,7 @@ import ScrollToTop from "../components/scroll-to-top";
 
 function ArtistPage(props) {
 
+    const t = props.t;
     const data = props.data;
     const slug = props.slug;
 
@@ -15,11 +16,11 @@ function ArtistPage(props) {
     return (
         artist && <div className={'wrapper'}>
             <ScrollToTop />
-            <Artist artist={artist} />
-            <h3>Tracks</h3>
+            <Artist t={t} artist={artist} />
+            <h3>{t('tracks')}</h3>
             <ul className={'releases'}>
                 {releases && releases.map((release, idx) => {
-                    return <li key={idx}><ReleaseLink release={release}/></li>;
+                    return <li key={idx}><ReleaseLink t={t} release={release}/></li>;
                 })}
             </ul>
         </div>
