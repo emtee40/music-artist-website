@@ -1,3 +1,5 @@
+@import "variables";
+
 ul#releases {
   list-style-type: none;
 
@@ -35,8 +37,10 @@ ul#releases {
       width: 100%;
       text-align: center;
       font-size: 24px;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.8);
       color: #fff;
+      backdrop-filter: $blur;
+      font-weight: 100;
     }
 
   }

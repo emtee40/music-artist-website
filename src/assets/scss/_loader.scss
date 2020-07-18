@@ -15,7 +15,7 @@
     path {
       stroke-dasharray: 908;
       stroke-dashoffset: 908;
-      animation: draw 2s ease-in-out infinite;
+      animation: draw 1.8s ease-in-out infinite;
     }
 
     @keyframes draw {
@@ -25,7 +25,7 @@
       50% {
         stroke-dashoffset: 0;
       }
-      70% {
+      60% {
         stroke-dashoffset: 900;
       }
       100% {
