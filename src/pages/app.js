@@ -7,6 +7,7 @@ import ReleasePage from "./release-page";
 import ArtistPage from "./artist-page";
 import ArtistsPage from "./artists-page";
 import {format} from "date-fns";
+import ScrollToTop from "../components/scroll-to-top";
 
 function App() {
     const [loading, setLoading] = useState(false);

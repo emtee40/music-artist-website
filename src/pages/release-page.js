@@ -1,5 +1,6 @@
 import React from 'react';
 import Release from "../components/release/release";
+import ScrollToTop from "../components/scroll-to-top";
 
 function ReleasePage(props) {
     const ean = props.ean;
@@ -8,6 +9,7 @@ function ReleasePage(props) {
 
     return (
         <div className="wrapper">
+            <ScrollToTop />
             <Release data={props.data} release={release} />
         </div>
     );

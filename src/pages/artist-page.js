@@ -2,6 +2,7 @@ import React from 'react';
 import {toSlug} from "../util";
 import ReleaseLink from "../components/release/release-link";
 import Artist from "../components/artist/artist";
+import ScrollToTop from "../components/scroll-to-top";
 
 function ArtistPage(props) {
 
@@ -13,6 +14,7 @@ function ArtistPage(props) {
 
     return (
         artist && <div className={'wrapper'}>
+            <ScrollToTop />
             <Artist artist={artist} />
             <h3>Tracks</h3>
             <ul className={'releases'}>

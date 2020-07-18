@@ -1,5 +1,6 @@
 import React from 'react';
 import ReleaseLink from "../components/release/release-link";
+import ScrollToTop from "../components/scroll-to-top";
 
 function ReleasesPage(props) {
     const releases = props.data.releases.map((release, idx) => {
@@ -12,6 +13,7 @@ function ReleasesPage(props) {
 
     return (
         <div className={'wrapper'}>
+            <ScrollToTop />
             {props.data.releases && <ul className={'releases'}>{releases}</ul>}
         </div>
     );
