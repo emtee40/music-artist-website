@@ -1,0 +1,13 @@
+ul.artists-list {
+  list-style-type: none;
+
+  display: flex;
+  align-content: space-between;
+  justify-items: center;
+  flex-direction: row;
+
+  li {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

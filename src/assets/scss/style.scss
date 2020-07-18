@@ -1,3 +1,4 @@
+@import "../../../lib/fira-code-5.2/fira_code.css";
 @import "variables";
 
 body {
@@ -7,17 +8,24 @@ body {
   position: relative;
   background-color: black;
   color: white;
-  font-family: monospace;
+  font-family: "Fira Code", monospace;
+  font-size: 12px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   padding-top: $nav-bar-margin;
+  padding-bottom: 16px;
 
-  @import "nav";
-  @import "loader";
-  @import "release";
-  @import "releases";
+  @import "components/nav";
+  @import "components/loader";
+  @import "components/links/release-link";
+  @import "components/links/artist-link";
+  @import "components/artist-list";
+  @import "components/release";
+  @import "components/artist";
+  @import "pages/releases";
+  @import "pages/artists";
 
   .wrapper {
     display: flex;

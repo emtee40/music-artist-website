@@ -1,4 +1,4 @@
-@import "variables";
+@import "src/assets/scss/variables";
 
 nav {
   position: fixed;
@@ -6,9 +6,10 @@ nav {
   left: 0;
   right: 0;
   height: $nav-bar-height;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 16px;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,12 +17,28 @@ nav {
   background-color: rgba(0,0,0,0.8);
   backdrop-filter: $blur;
 
-  #logo {
+  svg#logo {
     height: 48px;
     width: 48px;
+
+    cursor: pointer;
+
+    path {
+      stroke-dasharray: 908;
+      stroke-dashoffset: 0;
+
+      transition: stroke-dashoffset 0.5s 1ms;
+      transition-delay: -0.3s;
+
+      &:hover {
+        stroke-dashoffset: 904;
+      }
+    }
+
   }
 
   ul.nav {
+    margin-right: 15%;
     list-style-type: none;
 
     li.nav-item {

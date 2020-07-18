@@ -1,0 +1,64 @@
+@import "../variables";
+
+div.release {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+
+    img.cover {
+      width: 400px !important;
+      height: auto !important;
+    }
+
+    div.release-data {
+      padding: 16px;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: $blur;
+    }
+  }
+
+  img.cover {
+    height: 320px;
+    width: 320px;
+    border-radius: 5px;
+  }
+
+  div.release-data {
+    margin-left: 64px;
+    display: flex;
+    justify-content: center;
+
+    dt {
+      font-weight: bold;
+    }
+
+    .release-meta-wrapper {
+      dl.release-meta {
+        dd {
+
+        }
+      }
+    }
+
+    .release-tracks-wrapper {
+      margin-left: 64px;
+
+      ol.release-tracks {
+        li.release-track {
+          dl.track-meta {
+
+          }
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}

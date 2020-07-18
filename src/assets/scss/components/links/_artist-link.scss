@@ -1,0 +1,38 @@
+div.artist-link {
+  margin: 8px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      span.artist-name {
+        text-decoration: underline;
+      }
+
+      img {
+        height: 132px;
+        width: 132px;
+      }
+    }
+
+    img {
+      height: 128px;
+      width: 128px;
+      margin-bottom: 8px;
+      border-radius: 50%;
+      transition: height 0.2s,
+                  width 0.2s;
+    }
+    span.artist-name {
+      font-size: 24px;
+    }
+    span.artist-bio {
+      font-style: italic;
+    }
+  }
+}

@@ -6,6 +6,9 @@ Someday it will be at https://kratzen-und-fauchen.com...
 
 ## Development
 
+- It's *required* that the `svg` element in `logo.svg` has the property `pointer-events="bounding-box"`!!!
+    - If you edit that file with any image tool check it's still in there!
+
 ### Adding Releases
 
 New releases should be added to the `releases` array in `static/data.json`, the format is:

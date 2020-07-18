@@ -5,6 +5,7 @@ function Loader() {
     return (
         <div className={'loader-wrapper'}>
             <KFLogo id={'loader'} alt={'Loading...'} />
+            <p className={'loading-text'}>Loading</p>
         </div>
     );
 }

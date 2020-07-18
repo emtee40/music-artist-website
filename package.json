@@ -4,6 +4,7 @@
   "description": "Kratzen und Fauchen Website",
   "dependencies": {
     "assets": "^3.0.1",
+    "lib": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"

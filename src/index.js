@@ -1,4 +1,4 @@
-import App from "./components/app";
+import App from "./pages/app";
 import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter as Router} from "react-router-dom";

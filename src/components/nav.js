@@ -5,7 +5,9 @@ import {Link, NavLink} from "react-router-dom";
 function Nav() {
     return (
         <nav>
-            <KFLogo id={'logo'} alt="Kratzen und Fauchen Logo" />
+            <Link to={'/'}>
+                <KFLogo id={'logo'} alt="Kratzen und Fauchen Logo"/>
+            </Link>
             <ul className={'nav'}>
                 <li className="nav-item">
                     <NavLink activeClassName={'active'} exact={true} to={'/'}>Home</NavLink>

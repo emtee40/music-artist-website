@@ -1,15 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import logo from '../assets/images/logo.svg';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import Nav from "./nav";
+import {Route, Switch} from "react-router-dom";
+import Nav from "../components/nav";
 import ReleasesPage from "./releases-page";
-import Loader from "./loader";
+import Loader from "../components/loader";
 import ReleasePage from "./release-page";
+import ArtistPage from "./artist-page";
+import ArtistsPage from "./artists-page";
+import {format} from "date-fns";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -21,14 +18,12 @@ function App() {
         setLoading(true);
         fetch("/data.json").then(response => response.json())
             .then((jsonData) => {
-                // jsonData is parsed json object received from url
-                console.log(jsonData)
                 setLoading(false);
                 setError(undefined)
                 setData(jsonData);
             })
             .catch((error) => {
-                // handle your errors here
+                // TODO: handle error...
                 console.error(error)
                 setError(error);
             })
@@ -47,21 +42,23 @@ function App() {
                     <Loader/>
                 </Route>
                 <Route path={'/releases'} exact={true}>
-                    <div className="wrapper">
-                        <ReleasesPage data={data}/>
-                    </div>
+                    <ReleasesPage data={data}/>
                 </Route>
-                <Route
-                    path={'/release/:ean'}
-                    render={({match}) => {
-                        return match.params.ean && <ReleasePage releases={data.releases} ean={match.params.ean}/>; //TODO render error in 'or'
-                    }}
-                    exact={true}/>
-                <Route
-                    path={'/artists/:slug'}
-                />
+                <Route path={'/artists'} exact={true}>
+                    <ArtistsPage data={data}/>
+                </Route>
+                <Route path={'/release/:ean'}
+                       render={({match}) => {
+                           return match.params.ean && <ReleasePage releases={data.releases} ean={match.params.ean}/>; //TODO render error in 'or'
+                       }}
+                       exact={true}/>
+                <Route path={'/artist/:slug'}
+                       render={({match}) => {
+                           return match.params.slug && <ArtistPage data={data} slug={match.params.slug}/>; //TODO render error in 'or'
+                       }}
+                       exact={true}/>
             </Switch>) || <Loader/>}
-            <span className="footer">&copy; Kratzen und Fauchen</span>
+            <span className="footer">&copy; {format(new Date(), 'yyyy')} Kratzen und Fauchen</span>
         </div>
     );
 }

@@ -1,0 +1,27 @@
+@import "../variables";
+
+.artist {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    height: 128px;
+    width: 128px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    transition: height 0.2s,
+    width 0.2s;
+  }
+
+  h2.artist-name {
+    font-size: 24px;
+  }
+
+  p.artist-bio {
+    width: 40%;
+    font-style: italic;
+  }
+}
