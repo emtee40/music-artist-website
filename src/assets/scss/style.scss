@@ -12,6 +12,7 @@ body {
   user-select: none;
 
   @import 'nav';
+  @import "loader";
 }
 
 .wrapper {
@@ -22,10 +23,13 @@ body {
 }
 
 span.footer {
+  z-index: 12;
+  background: #000;
   display: inline-block;
   position: fixed;
   text-align: center;
-  bottom: 8px;
+  padding-bottom: 8px;
+  bottom: 0;
   left: 0;
   overflow: hidden;
   width: 100%;

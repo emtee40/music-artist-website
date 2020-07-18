@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../assets/images/logo.svg';
+import KFLogo from '../assets/images/logo.svg';
 import {Link, NavLink} from "react-router-dom";
 
 function Nav() {
     return (
         <nav>
-            <img id="logo" alt="Kratzen und Fauchen Logo" src={logo}/>
+            <KFLogo id={'logo'} alt="Kratzen und Fauchen Logo" />
             <ul className={'nav'}>
                 <li className="nav-item">
                     <NavLink activeClassName={'active'} exact={true} to={'/'}>Home</NavLink>

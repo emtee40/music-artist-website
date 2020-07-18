@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="stylesheet" href="assets/less/style.less">
+    <link rel="stylesheet" href="assets/scss/style.scss">
     <link rel="manifest" href="assets/site.webmanifest">
     <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#000000">
@@ -36,6 +36,13 @@
 </head>
 <body>
 <div id="root"></div>
+<noscript>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h2>Sorry :c</h2>
+        <p>Unfortunately this page requires javascript!</p>
+        <p>If you just want some data, you can&nbsp;<!--[<a href="/data.json" type="application/json">view the JSON</a>]-->.</p>
+    </div>
+</noscript>
 <script src="index.js"></script>
 <noscript><img src="https://analytics.lrk.sh/matomo.php?idsite=7&amp;rec=1" style="border:0" alt=""/></noscript>
 </body>
