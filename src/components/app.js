@@ -9,6 +9,7 @@ import {
 import Nav from "./nav";
 import ReleasesPage from "./releases-page";
 import Loader from "./loader";
+import ReleasePage from "./release-page";
 
 function App() {
     const [loading, setLoading] = useState(false);
@@ -45,11 +46,17 @@ function App() {
                 <Route path={'/about'} exact={true}>
                     <Loader/>
                 </Route>
-                <Route path={'/releases'}>
+                <Route path={'/releases'} exact={true}>
                     <div className="wrapper">
                         <ReleasesPage data={data}/>
                     </div>
                 </Route>
+                <Route
+                    path={'/release/:ean'}
+                    render={({match}) => {
+                        return match.params.ean && <ReleasePage releases={data.releases} ean={match.params.ean}/>; //TODO render error in 'or'
+                    }}
+                    exact={true}/>
             </Switch>) || <Loader/>}
             <span className="footer">&copy; Kratzen und Fauchen</span>
         </div>
