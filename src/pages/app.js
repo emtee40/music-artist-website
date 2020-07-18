@@ -49,7 +49,7 @@ function App() {
                 </Route>
                 <Route path={'/release/:ean'}
                        render={({match}) => {
-                           return match.params.ean && <ReleasePage releases={data.releases} ean={match.params.ean}/>; //TODO render error in 'or'
+                           return match.params.ean && <ReleasePage data={data} ean={match.params.ean}/>; //TODO render error in 'or'
                        }}
                        exact={true}/>
                 <Route path={'/artist/:slug'}

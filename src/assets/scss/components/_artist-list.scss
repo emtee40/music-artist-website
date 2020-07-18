@@ -18,6 +18,12 @@ ul.artist-list {
       &:hover {
         color: #99b6d4;
       }
+
+      &.unknown {
+        text-decoration: none;
+        color: #fff;
+        cursor: default;
+      }
     }
   }
 }

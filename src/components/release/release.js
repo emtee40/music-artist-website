@@ -5,8 +5,6 @@ import ArtistList from "../artist/artist-list";
 
 function Release(props) {
 
-    console.log(props.release);
-
     const parsedDate = parse(props.release.date, 'yyyy-MM-dd', new Date());
     const releaseDistanceString = formatDistanceToNow(parsedDate, {addSuffix: true});
 
@@ -20,7 +18,7 @@ function Release(props) {
                             <dt>Title</dt>
                             <dd>{props.release.title}</dd>
                             <dt>Artists</dt>
-                            <dd><ArtistList artists={props.release.artists}/></dd>
+                            <dd><ArtistList data={props.data} artists={props.release.artists}/></dd>
                             <dt>Genres</dt>
                             <dd>{props.release.genres.join(', ')}</dd>
                             <dt>Copyright</dt>
@@ -39,7 +37,7 @@ function Release(props) {
                                             <dt>Title</dt>
                                             <dd>{track.title}&nbsp;({track.version})</dd>
                                             <dt>Artists</dt>
-                                            <dd><ArtistList artists={props.release.artists}/></dd>
+                                            <dd><ArtistList data={props.data} artists={props.release.artists}/></dd>
                                             <dt>ISRC</dt>
                                             <dd>{track.isrc}</dd>
                                             <dt>Copyright</dt>
