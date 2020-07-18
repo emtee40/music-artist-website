@@ -13,24 +13,26 @@ body {
 
   @import 'nav';
   @import "loader";
-}
+  @import "release";
+  @import "releases";
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-span.footer {
-  z-index: 12;
-  background: #000;
-  display: inline-block;
-  position: fixed;
-  text-align: center;
-  padding-bottom: 8px;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
+  span.footer {
+    z-index: 12;
+    background: #000;
+    display: inline-block;
+    position: fixed;
+    text-align: center;
+    padding-bottom: 8px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+  }
 }

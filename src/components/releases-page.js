@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Cover from "./release/cover";
 
 function ReleasesPage(props) {
     console.log('Releases: ');
@@ -8,7 +9,10 @@ function ReleasesPage(props) {
     const releases = props.data.releases.map((release, idx) => {
         return (
             <li className={'release'} key={idx}>
-                <Link to={'/release/' + release.ean}>{release.title}</Link>
+                <Link to={'/release/' + release.ean}>
+                    <Cover release={release} />
+                    <span className={'release-title'}>{release.artists.join(', ')} - {release.title}</span>
+                </Link>
             </li>
         );
     });

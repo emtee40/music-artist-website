@@ -57,6 +57,9 @@ function App() {
                         return match.params.ean && <ReleasePage releases={data.releases} ean={match.params.ean}/>; //TODO render error in 'or'
                     }}
                     exact={true}/>
+                <Route
+                    path={'/artists/:slug'}
+                />
             </Switch>) || <Loader/>}
             <span className="footer">&copy; Kratzen und Fauchen</span>
         </div>
