@@ -1,4 +1,5 @@
 {
+  "site-title": "Kratzen und Fauchen",
   "welcome-text": "This page is currently under construction!",
   "logo-description": "Kratzen und Fauchen Logo",
   "home": "Home",
@@ -17,5 +18,7 @@
   "release-date": "Release Date",
   "tracks": "Tracks",
   "isrc": "ISRC",
-  "sound-recording": "Sound Recording"
+  "sound-recording": "Sound Recording",
+  "error": "Error",
+  "error-text": "Unfortunately an error occurred."
 }

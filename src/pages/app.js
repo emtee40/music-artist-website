@@ -8,9 +8,12 @@ import ArtistPage from "./artist-page";
 import ArtistsPage from "./artists-page";
 import {format} from "date-fns";
 import {useTranslation} from 'react-i18next';
+import Tracking from "../components/tracking";
+import ErrorPage from "./error-page";
 
-function App() {
+function App(props) {
     const {t} = useTranslation();
+    const paq = props.paq;
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(undefined);
     const [data, setData] = useState(undefined);
@@ -34,34 +37,38 @@ function App() {
     return (
         <div>
             <Nav t={t}/>
-            {(data && <Switch>
-                <Route path={'/'} exact={true}>
-                    <div className="wrapper">
-                        {/* TODO: add widget for latest releases and artists */}
-                        <p>{t('welcome-text')}</p>
-                    </div>
-                </Route>
-                <Route path={'/about'} exact={true}>
-                    <Loader t={t}/>
-                </Route>
-                <Route path={'/releases'} exact={true}>
-                    <ReleasesPage t={t} data={data}/>
-                </Route>
-                <Route path={'/artists'} exact={true}>
-                    <ArtistsPage t={t} data={data}/>
-                </Route>
-                <Route path={'/release/:ean'}
-                       render={({match}) => {
-                           return match.params.ean && <ReleasePage t={t} data={data} ean={match.params.ean}/>; //TODO render error in 'or'
-                       }}
-                       exact={true}/>
-                <Route path={'/artist/:slug'}
-                       render={({match}) => {
-                           return match.params.slug && <ArtistPage t={t} data={data} slug={match.params.slug}/>; //TODO render error in 'or'
-                       }}
-                       exact={true}/>
-            </Switch>) || <Loader t={t}/>}
-            <span className="footer">&copy; {format(new Date(), 'yyyy')} Kratzen und Fauchen</span>
+            <ErrorPage t={t} paq={paq}>
+                {(data && <Switch>
+                    <Route path={'/'} exact={true}>
+                        <Tracking paq={paq} />
+                        <div className="wrapper">
+                            {/* TODO: add widget for latest releases and artists */}
+                            <p>{t('welcome-text')}</p>
+                        </div>
+                    </Route>
+                    <Route path={'/about'} exact={true}>
+                        <Tracking paq={paq} />
+                        <Loader t={t}/>
+                    </Route>
+                    <Route path={'/releases'} exact={true}>
+                        <ReleasesPage paq={paq} t={t} data={data}/>
+                    </Route>
+                    <Route path={'/artists'} exact={true}>
+                        <ArtistsPage paq={paq} t={t} data={data}/>
+                    </Route>
+                    <Route path={'/release/:ean'}
+                           render={({match}) => {
+                               return match.params.ean && <ReleasePage paq={paq} t={t} data={data} ean={match.params.ean}/>; //TODO render error in 'or'
+                           }}
+                           exact={true}/>
+                    <Route path={'/artist/:slug'}
+                           render={({match}) => {
+                               return match.params.slug && <ArtistPage paq={paq} t={t} data={data} slug={match.params.slug}/>; //TODO render error in 'or'
+                           }}
+                           exact={true}/>
+                </Switch>) || <Loader t={t}/>}
+            </ErrorPage>
+            <span className="footer">&copy; {format(new Date(), 'yyyy')}&nbsp;{t('site-title')}</span>
         </div>
     );
 }
