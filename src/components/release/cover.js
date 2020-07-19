@@ -10,7 +10,7 @@ function Cover(props) {
 
     const coverImage = <img src={imageLink} alt={coverAltText} className={'cover'}/>;
 
-    if(link) {
+    if (link) {
         return (
             <Link to={'/covers/md/' + props.release.ean + '.jpeg'} target={'_blank'} className={'cover-link'}>
                 {coverImage}

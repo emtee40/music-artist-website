@@ -1,5 +1,5 @@
 import React from 'react';
-import ArtistLink from "../components/artist/artist-link";
+import ArtistLink from "../components/links/artist-link";
 import ScrollToTop from "../components/scroll-to-top";
 import Tracking from "../components/tracking";
 
@@ -13,10 +13,10 @@ function ArtistsPage(props) {
 
     return (
         <div className="wrapper">
-            <Tracking paq={paq} />
-            <ScrollToTop />
+            <Tracking paq={paq}/>
+            <ScrollToTop/>
             <ul className={'artists-list'}>
-                {data.artists.map((artist, idx) => <li key={idx}><ArtistLink t={t} artist={artist} /></li>)}
+                {data.artists.map((artist, idx) => <li key={idx}><ArtistLink t={t} artist={artist}/></li>)}
             </ul>
         </div>
     );

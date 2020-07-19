@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import Cover from "./cover";
+import Cover from "../release/cover";
 
 function ReleaseLink(props) {
 

@@ -40,14 +40,14 @@ function App(props) {
             <ErrorPage t={t} paq={paq}>
                 {(data && <Switch>
                     <Route path={'/'} exact={true}>
-                        <Tracking paq={paq} />
+                        <Tracking paq={paq}/>
                         <div className="wrapper">
                             {/* TODO: add widget for latest releases and artists */}
                             <p>{t('welcome-text')}</p>
                         </div>
                     </Route>
                     <Route path={'/about'} exact={true}>
-                        <Tracking paq={paq} />
+                        <Tracking paq={paq}/>
                         <Loader t={t}/>
                     </Route>
                     <Route path={'/releases'} exact={true}>
@@ -58,12 +58,14 @@ function App(props) {
                     </Route>
                     <Route path={'/release/:ean'}
                            render={({match}) => {
-                               return match.params.ean && <ReleasePage paq={paq} t={t} data={data} ean={match.params.ean}/>; //TODO render error in 'or'
+                               return match.params.ean &&
+                                   <ReleasePage paq={paq} t={t} data={data} ean={match.params.ean}/>; //TODO render error in 'or'
                            }}
                            exact={true}/>
                     <Route path={'/artist/:slug'}
                            render={({match}) => {
-                               return match.params.slug && <ArtistPage paq={paq} t={t} data={data} slug={match.params.slug}/>; //TODO render error in 'or'
+                               return match.params.slug &&
+                                   <ArtistPage paq={paq} t={t} data={data} slug={match.params.slug}/>; //TODO render error in 'or'
                            }}
                            exact={true}/>
                 </Switch>) || <Loader t={t}/>}

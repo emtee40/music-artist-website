@@ -8,7 +8,7 @@ function Artist(props) {
 
     return (
         <div className={'artist'}>
-            <img alt={t('artist-img-desc-pre') + artist.name} src={'/artists/' + toSlug(artist.name) + '.jpeg'} />
+            <img alt={t('artist-img-desc-pre') + artist.name} src={'/artists/' + toSlug(artist.name) + '.jpeg'}/>
             <h2 className={'artist-name'}>{artist.name}</h2>
             <p className={'artist-bio'}>{t('artists:' + artist.bio)}</p>{/* TODO: implement i18n for artist bio */}
         </div>

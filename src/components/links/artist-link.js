@@ -11,7 +11,7 @@ function ArtistLink(props) {
     return (
         <div className={'artist-link'}>
             <Link to={'/artist/' + artistSlug}>
-                <img src={'/artists/' + artistSlug + '.jpeg'} alt={t('artist-img-desc-pre') + artist.name} />
+                <img src={'/artists/' + artistSlug + '.jpeg'} alt={t('artist-img-desc-pre') + artist.name}/>
                 <span className={'artist-name'}>{artist.name}</span>
                 <span className={'artist-bio'}>{t('artists:' + artist.shortBio)}</span>
             </Link>

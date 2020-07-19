@@ -1,6 +1,6 @@
 import React from 'react';
 import {toSlug} from "../util";
-import ReleaseLink from "../components/release/release-link";
+import ReleaseLink from "../components/links/release-link";
 import Artist from "../components/artist/artist";
 import ScrollToTop from "../components/scroll-to-top";
 import Tracking from "../components/tracking";
@@ -15,13 +15,13 @@ function ArtistPage(props) {
     const releases = data.releases.filter(release => release.artists.map(toSlug).includes(slug));
     const artist = data.artists.find(artist => toSlug(artist.name) === slug);
 
-    if(artist) document.title = artist.name + ' - ' + t('site-title');
+    if (artist) document.title = artist.name + ' - ' + t('site-title');
 
     return (
         artist && <div className={'wrapper'}>
-            <Tracking paq={paq} />
-            <ScrollToTop />
-            <Artist t={t} artist={artist} />
+            <Tracking paq={paq}/>
+            <ScrollToTop/>
+            <Artist t={t} artist={artist}/>
             <h3>{t('tracks')}</h3>
             <ul className={'releases'}>
                 {releases && releases.map((release, idx) => {

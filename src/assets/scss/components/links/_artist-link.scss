@@ -1,5 +1,6 @@
 div.artist-link {
   margin: 8px;
+
   a {
     display: flex;
     justify-content: center;
@@ -26,11 +27,13 @@ div.artist-link {
       margin-bottom: 8px;
       border-radius: 50%;
       transition: height 0.2s,
-                  width 0.2s;
+      width 0.2s;
     }
+
     span.artist-name {
       font-size: 24px;
     }
+
     span.artist-bio {
       font-style: italic;
     }

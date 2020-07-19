@@ -20,5 +20,6 @@
   "isrc": "ISRC",
   "sound-recording": "Sound Recording",
   "error": "Error",
-  "error-text": "Unfortunately an error occurred."
+  "error-text": "Unfortunately an error occurred.",
+  "links": "Links"
 }

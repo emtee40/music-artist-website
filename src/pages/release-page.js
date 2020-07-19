@@ -11,13 +11,13 @@ function ReleasePage(props) {
     const releases = props.data.releases;
     const release = releases.find(rel => rel.ean === ean);
 
-    if(release) document.title = release.title + ' - ' + t('site-title');
+    if (release) document.title = release.title + ' - ' + t('site-title');
 
     return (
         <div className="wrapper">
-            <Tracking paq={paq} />
-            <ScrollToTop />
-            <Release t={t} data={props.data} release={release} />
+            <Tracking paq={paq}/>
+            <ScrollToTop/>
+            <Release t={t} data={props.data} release={release}/>
         </div>
     );
 }

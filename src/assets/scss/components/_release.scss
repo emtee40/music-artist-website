@@ -18,7 +18,7 @@ div.release {
 
     div.release-data {
       padding: 16px;
-      background: rgba(0,0,0,0.8);
+      background: rgba(0, 0, 0, 0.8);
       backdrop-filter: $blur;
     }
   }
@@ -40,10 +40,10 @@ div.release {
 
     .release-meta-wrapper {
       dl.release-meta {
-        dd {
 
-        }
       }
+
+      @import "release/release-link";
     }
 
     .release-tracks-wrapper {
@@ -54,6 +54,7 @@ div.release {
           dl.track-meta {
 
           }
+
           &:not(:last-child) {
             margin-bottom: 16px;
           }

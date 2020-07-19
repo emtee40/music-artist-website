@@ -23,7 +23,7 @@ export default class ErrorPage extends Component {
             return (
                 <div className={'wrapper'}>
                     <Tracking paq={this.paq}
-                              error={this.state.error} />
+                              error={this.state.error}/>
                     <h1>{this.t('error')}</h1>
                     <p>{this.t('error-text')}</p>
                 </div>
