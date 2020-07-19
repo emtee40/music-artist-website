@@ -11,7 +11,7 @@ function Release(props) {
 
     return (props.release && (
             <div className={'release'}>
-                <Cover t={t} release={props.release}/>
+                <Cover link={true} t={t} release={props.release}/>
                 <div className="release-data">
                     <div className="release-meta-wrapper">
                         <h2>{t('meta')}</h2>
