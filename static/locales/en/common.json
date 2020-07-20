@@ -22,5 +22,6 @@
   "error": "Error",
   "error-text": "Unfortunately an error occurred.",
   "links": "Links",
-  "releases_by": "Releases by "
+  "releases_by": "Releases by ",
+  "all_releases": "All Releases"
 }
