@@ -21,7 +21,7 @@ i18n
     .init({
         fallbackLng: 'en',
 
-        ns: ['common', 'artists', 'aria'],
+        ns: ['common', 'artists', 'aria', 'form'],
         defaultNS: 'common',
         backend: {
             // path where resources get loaded from, or a function

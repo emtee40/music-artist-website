@@ -7,6 +7,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "assets": "^3.0.1",
+    "formik": "^2.1.5",
     "i": "^0.3.6",
     "i18next": "^19.6.2",
     "i18next-browser-languagedetector": "^5.0.0",

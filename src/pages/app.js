@@ -10,6 +10,7 @@ import {format} from "date-fns";
 import {useTranslation} from 'react-i18next';
 import Tracking from "../components/tracking";
 import ErrorPage from "./error-page";
+import ContactPage from "./contact-page";
 
 function App(props) {
     const {t} = useTranslation();
@@ -49,6 +50,9 @@ function App(props) {
                     <Route path={'/about'} exact={true}>
                         <Tracking paq={paq}/>
                         <Loader t={t}/>
+                    </Route>
+                    <Route path={'/contact'} exact={true}>
+                        <ContactPage paq={paq} t={t} />
                     </Route>
                     <Route path={'/releases'} exact={true}>
                         <ReleasesPage paq={paq} t={t} data={data}/>
