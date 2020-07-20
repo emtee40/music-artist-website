@@ -22,6 +22,7 @@ function ReleasesPage(props) {
         <div className={'wrapper'}>
             <Tracking paq={paq}/>
             <ScrollToTop/>
+            <h1>{t('all_releases')}</h1>
             {props.data.releases && <ul className={'releases'}>{releases}</ul>}
         </div>
     );

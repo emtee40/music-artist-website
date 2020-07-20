@@ -21,5 +21,7 @@
   "sound-recording": "Sound Recording",
   "error": "Error",
   "error-text": "Unfortunately an error occurred.",
-  "links": "Links"
+  "links": "Links",
+  "releases_by": "Releases by ",
+  "all_releases": "All Releases"
 }

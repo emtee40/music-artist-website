@@ -22,7 +22,7 @@ function ArtistPage(props) {
             <Tracking paq={paq}/>
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
-            <h3>{t('tracks')}</h3>
+            <h3>{t('releases_by') + artist.name}</h3>
             <ul className={'releases'}>
                 {releases && releases.map((release, idx) => {
                     return <li key={idx}><ReleaseLink t={t} release={release}/></li>;
