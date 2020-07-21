@@ -1,7 +1,7 @@
 import React from 'react';
-import ReleaseLink from "../components/links/release-link";
 import ScrollToTop from "../components/scroll-to-top";
 import Tracking from "../components/tracking";
+import ReleaseList from "../components/release/release-list";
 
 function ReleasesPage(props) {
 
@@ -10,20 +10,12 @@ function ReleasesPage(props) {
 
     document.title = t('releases') + ' - ' + t('site-title');
 
-    const releases = props.data.releases.map((release, idx) => {
-        return (
-            <li key={idx}>
-                <ReleaseLink t={t} release={release}/>
-            </li>
-        );
-    });
-
     return (
         <div className={'wrapper'}>
             <Tracking paq={paq}/>
             <ScrollToTop/>
             <h1>{t('all_releases')}</h1>
-            {props.data.releases && <ul className={'releases'}>{releases}</ul>}
+            <ReleaseList t={t} releases={props.data.releases}/>
         </div>
     );
 }

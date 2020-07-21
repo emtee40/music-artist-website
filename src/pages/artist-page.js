@@ -1,9 +1,9 @@
 import React from 'react';
 import {toSlug} from "../util";
-import ReleaseLink from "../components/links/release-link";
 import Artist from "../components/artist/artist";
 import ScrollToTop from "../components/scroll-to-top";
 import Tracking from "../components/tracking";
+import ReleaseList from "../components/release/release-list";
 
 function ArtistPage(props) {
 
@@ -23,11 +23,7 @@ function ArtistPage(props) {
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
             <h3>{t('releases_by') + artist.name}</h3>
-            <ul className={'releases'}>
-                {releases && releases.map((release, idx) => {
-                    return <li key={idx}><ReleaseLink t={t} release={release}/></li>;
-                })}
-            </ul>
+            <ReleaseList t={t} releases={releases}/>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch} from "react-router";
 import Nav from "../components/nav";
 import ReleasesPage from "./releases-page";
 import Loader from "../components/loader";
@@ -52,7 +52,7 @@ function App(props) {
                         <Loader t={t}/>
                     </Route>
                     <Route path={'/contact'} exact={true}>
-                        <ContactPage paq={paq} t={t} />
+                        <ContactPage paq={paq} t={t}/>
                     </Route>
                     <Route path={'/releases'} exact={true}>
                         <ReleasesPage paq={paq} t={t} data={data}/>
