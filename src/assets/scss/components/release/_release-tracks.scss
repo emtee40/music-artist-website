@@ -1,0 +1,31 @@
+
+.release-tracks-wrapper {
+  margin-left: 64px;
+
+  ol.release-tracks {
+
+    display: grid;
+    grid-template-columns: 320px 320px;
+
+    @media (min-width: 1099px) {
+      grid-template-columns: 320px 320px 320px;
+    }
+
+    @media (min-width: 1500px) {
+      grid-template-columns: 320px 320px 320px 320px;
+    }
+
+    li.release-track {
+      dl.track-meta {
+        dt {
+          color: #AAA;
+          font-weight: bold;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

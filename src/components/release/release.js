@@ -11,14 +11,14 @@ function Release(props) {
 
     return (release && (
             <div className={'release'}>
-                <Cover link={true} t={t} release={release}/>
                 <div className="release-data">
-                    <div className="release-meta-wrapper">
+                    <Cover link={true} t={t} release={release}/>
+                    <div className="release-data__inner">
                         <ReleaseMeta t={t} data={props.data} release={release}/>
                         <ReleaseLinks t={t} release={release}/>
                     </div>
-                    <ReleaseTracks t={t} data={props.data} release={release}/>
                 </div>
+                <ReleaseTracks t={t} data={props.data} release={release}/>
             </div>) || null
     );
 }
