@@ -45,12 +45,14 @@ function ContactPage(props) {
                         <input
                             type="email"
                             name="email"
+                            aria-label={t('aria:email')}
                             onChange={handleChange}
                             onBlur={handleBlur}
                             value={values.email}
                         />
                         <textarea
                             name={'message'}
+                            aria-label={t('aria:message')}
                             onChange={handleChange}
                             onBlur={handleBlur}
                             value={values.password}

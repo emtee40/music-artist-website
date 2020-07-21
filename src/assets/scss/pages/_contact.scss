@@ -1,5 +1,7 @@
 @import "../variables";
 
+$form-input-width: 400px;
+
 form#contact-form {
   display: flex;
   justify-content: center;
@@ -20,11 +22,16 @@ form#contact-form {
 
   input,
   textarea {
-    width: 400px;
+    width: $form-input-width;
   }
 
   input {
     line-height: 1.2rem;
+  }
+
+  textarea {
+    min-height: 12rem;
+    min-width: $form-input-width;
   }
 
   button {
