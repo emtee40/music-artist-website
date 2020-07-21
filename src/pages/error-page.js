@@ -25,7 +25,7 @@ export default class ErrorPage extends Component {
                 <div className={'wrapper'}>
                     <ScrollToTop />
                     <Tracking error={this.state.error}/>
-                    <ErrorView t={this.t} errorMsg={t('javascript_error_text')} />
+                    <ErrorView t={this.t} errorMsg={t('javascript-error-text')} />
                 </div>
             );
         }

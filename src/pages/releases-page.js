@@ -13,7 +13,7 @@ function ReleasesPage(props) {
         <div className={'wrapper'}>
             <Tracking />
             <ScrollToTop/>
-            <h1>{t('all_releases')}</h1>
+            <h1>{t('all-releases')}</h1>
             <ReleaseList t={t} releases={props.data.releases}/>
         </div>
     );

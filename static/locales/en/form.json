@@ -1,6 +1,6 @@
 {
-  "email_required": "E-Mail address is required",
-  "email_invalid": "Invalid email address",
-  "message_required": "A message is required",
+  "email-required": "E-Mail address is required",
+  "email-invalid": "Invalid email address",
+  "message-required": "A message is required",
   "submit": "Submit!"
 }

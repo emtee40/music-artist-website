@@ -11,14 +11,14 @@ function ContactForm(props) {
             validate={values => {
                 const errors = {};
                 if (!values.email) {
-                    errors.email = t('form:email_required');
+                    errors.email = t('form:email-required');
                 } else if (
                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                 ) {
-                    errors.email = t('form:email_invalid');
+                    errors.email = t('form:email-invalid');
                 }
                 if(!values.message) {
-                    errors.message = t('form:message_required');
+                    errors.message = t('form:message-required');
                 }
                 return errors;
             }}

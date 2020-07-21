@@ -21,7 +21,7 @@ function ArtistPage(props) {
             <Tracking />
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
-            <h3>{t('releases_by') + artist.name}</h3>
+            <h3>{t('releases-by') + artist.name}</h3>
             <ReleaseList t={t} releases={releases}/>
         </div>
     );

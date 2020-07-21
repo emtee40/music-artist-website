@@ -13,7 +13,7 @@ function ContactPage(props) {
             <Tracking />
             <ScrollToTop />
             <h1>{t('contact')}</h1>
-            <p className={'contact-text'}>{t('contact_text')}</p>
+            <p className={'contact-text'}>{t('contact-text')}</p>
             <ContactForm t={t} />
         </div>
     );

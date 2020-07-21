@@ -21,8 +21,6 @@ function Tracking(props) {
     }
     paq.push(['trackPageView']);
     return (<script type={'text/javascript'} async={true} defer={true} src={u + 'matomo.js'} />);
-
-    return null; // render nothing
 }
 
 export default Tracking;

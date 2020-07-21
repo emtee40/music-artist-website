@@ -3,7 +3,7 @@ import React from 'react';
 function ErrorView(props) {
 
     const t = props.t;
-    const errorMsg = props.errorMsg || t('generic_error_msg');
+    const errorMsg = props.errorMsg || t('generic-error-msg');
 
     return (
         <div className={'error-view'}>
