@@ -8,7 +8,7 @@ function MainPage(props) {
 
     return (
         <div className="wrapper">
-            <Tracking paq={props.paq}/>
+            <Tracking />
             <ScrollToTop/>
             <p>{t('welcome-text')}</p>
             {/* TODO: add widget for latest releases and artists */}

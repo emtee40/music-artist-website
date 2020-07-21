@@ -1,0 +1,26 @@
+div.footer {
+  z-index: 12;
+  background: #000;
+  display: inline-block;
+  position: fixed;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+
+  a, span {
+    &:not(:last-child):after {
+      display: inline-block;
+      content: '\00a0-\00a0';
+    }
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
+  }
+}

@@ -6,13 +6,12 @@ import ReleaseList from "../components/release/release-list";
 function ReleasesPage(props) {
 
     const t = props.t;
-    const paq = props.paq;
 
     document.title = t('releases') + ' - ' + t('site-title');
 
     return (
         <div className={'wrapper'}>
-            <Tracking paq={paq}/>
+            <Tracking />
             <ScrollToTop/>
             <h1>{t('all_releases')}</h1>
             <ReleaseList t={t} releases={props.data.releases}/>

@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import Tracking from "../components/tracking";
+import ErrorView from "../components/error-view";
+import ScrollToTop from "../components/scroll-to-top";
 
 export default class ErrorPage extends Component {
     constructor(props) {
         super(props);
         this.t = props.t;
-        this.paq = props.paq;
         this.state = {hasError: false, error: undefined};
     }
 
@@ -22,10 +23,9 @@ export default class ErrorPage extends Component {
         if (this.state.hasError) {
             return (
                 <div className={'wrapper'}>
-                    <Tracking paq={this.paq}
-                              error={this.state.error}/>
-                    <h1>{this.t('error')}</h1>
-                    <p>{this.t('error-text')}</p>
+                    <ScrollToTop />
+                    <Tracking error={this.state.error}/>
+                    <ErrorView t={this.t} errorMsg={t('javascript_error_text')} />
                 </div>
             );
         }

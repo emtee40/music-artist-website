@@ -2,6 +2,11 @@
 
 $form-input-width: 400px;
 
+p.contact-text {
+  width: 80%;
+  max-width: $form-input-width;
+}
+
 form#contact-form {
   display: flex;
   justify-content: center;

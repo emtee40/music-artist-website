@@ -6,7 +6,6 @@ import Tracking from "../components/tracking";
 function ReleasePage(props) {
 
     const t = props.t;
-    const paq = props.paq;
     const ean = props.ean;
     const releases = props.data.releases;
     const release = releases.find(rel => rel.ean === ean);
@@ -15,7 +14,7 @@ function ReleasePage(props) {
 
     return (
         <div className="wrapper">
-            <Tracking paq={paq}/>
+            <Tracking />
             <ScrollToTop/>
             <h1>{release.title}</h1>
             <Release t={t} data={props.data} release={release}/>

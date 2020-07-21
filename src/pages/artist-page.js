@@ -8,7 +8,6 @@ import ReleaseList from "../components/release/release-list";
 function ArtistPage(props) {
 
     const t = props.t;
-    const paq = props.paq;
     const data = props.data;
     const slug = props.slug;
 
@@ -19,7 +18,7 @@ function ArtistPage(props) {
 
     return (
         artist && <div className={'wrapper'}>
-            <Tracking paq={paq}/>
+            <Tracking />
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
             <h3>{t('releases_by') + artist.name}</h3>

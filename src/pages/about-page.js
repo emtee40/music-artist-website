@@ -8,7 +8,7 @@ function AboutPage(props) {
 
     return (
         <div className={'wrapper'}>
-            <Tracking paq={props.paq}/>
+            <Tracking />
             <ScrollToTop/>
             <h1>{t('about')}</h1>
             <p className={'about-text'}>{t('content:about')}</p>
