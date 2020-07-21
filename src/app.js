@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import {Route, Switch} from "react-router";
-import Nav from "../components/nav";
-import ReleasesPage from "./releases-page";
-import Loader from "../components/loader";
-import ReleasePage from "./release-page";
-import ArtistPage from "./artist-page";
-import ArtistsPage from "./artists-page";
+import Nav from "./components/nav";
+import ReleasesPage from "./pages/releases-page";
+import Loader from "./components/loader";
+import ReleasePage from "./pages/release-page";
+import ArtistPage from "./pages/artist-page";
+import ArtistsPage from "./pages/artists-page";
 import {format} from "date-fns";
 import {useTranslation} from 'react-i18next';
-import Tracking from "../components/tracking";
-import ErrorPage from "./error-page";
-import ContactPage from "./contact-page";
+import ErrorPage from "./pages/error-page";
+import ContactPage from "./pages/contact-page";
+import MainPage from "./pages/main-page";
+import AboutPage from "./pages/about-page";
 
 function App(props) {
     const {t} = useTranslation();
@@ -41,15 +42,10 @@ function App(props) {
             <ErrorPage t={t} paq={paq}>
                 {(data && <Switch>
                     <Route path={'/'} exact={true}>
-                        <Tracking paq={paq}/>
-                        <div className="wrapper">
-                            {/* TODO: add widget for latest releases and artists */}
-                            <p>{t('welcome-text')}</p>
-                        </div>
+                        <MainPage t={t} paq={paq}/>
                     </Route>
                     <Route path={'/about'} exact={true}>
-                        <Tracking paq={paq}/>
-                        <Loader t={t}/>
+                        <AboutPage t={t} paq={paq}/>
                     </Route>
                     <Route path={'/contact'} exact={true}>
                         <ContactPage paq={paq} t={t}/>
