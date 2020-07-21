@@ -5,8 +5,12 @@ ul.releases {
   display: grid;
   grid-template-columns: 352px 352px;
 
-  @media (min-width: 1350px) {
+  @media (min-width: 1220px) {
     grid-template-columns: 352px 352px 352px;
+  }
+
+  @media (min-width: 1750px) {
+    grid-template-columns: 352px 352px 352px 352px;
   }
 
   @media (max-width: 850px) {
