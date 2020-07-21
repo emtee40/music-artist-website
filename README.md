@@ -9,6 +9,7 @@ Someday it will be at https://kratzen-und-fauchen.com...
 - It's *required* that the `svg` element in `logo.svg` has the property `pointer-events="bounding-box"`!!!
     - If you edit that file with any image tool check it's still in there!
 - Because of javascript routing being not the same as "real" browser routing, the `<ScrollToTop />` component has to be added somewhere in every page.
+- I18N keys should be in lowercase and use dashes as separator (eg. `hello-world` instead of `hello_world`)
 
 ### Adding Releases
 
