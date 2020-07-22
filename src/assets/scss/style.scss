@@ -26,8 +26,9 @@ body {
   @import "components/release/release";
   @import "components/artist";
   @import "components/footer";
+  @import "components/error";
   @import "pages/about";
-  @import "pages/releases";
+  @import "components/release/release-list";
   @import "pages/artists";
   @import "pages/contact";
 

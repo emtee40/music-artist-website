@@ -1,0 +1,47 @@
+@import "../../variables";
+
+div.release-list-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+
+  ul.releases {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 352px 352px;
+
+    @media (min-width: 1220px) {
+      grid-template-columns: 352px 352px 352px;
+    }
+
+    @media (min-width: 1750px) {
+      grid-template-columns: 352px 352px 352px 352px;
+    }
+
+    @media (max-width: 850px) {
+      grid-template-columns: 352px;
+    }
+
+    li {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  button.release-sort-btn,
+  button.release-sort-btn:focus,
+  button.release-sort-btn:active {
+    margin-top: 32px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+      color: #DDD;
+    }
+  }
+}

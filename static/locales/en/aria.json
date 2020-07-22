@@ -9,5 +9,8 @@
   "napster": "Napster",
   "yandex": "Yandex",
   "email": "E-Mail Address",
-  "message": "Message"
+  "message": "Message",
+  "sort-button-pre": "Sort releases by date (currently ",
+  "sort-button-desc": "descending)",
+  "sort-button-asc": "ascending)"
 }
