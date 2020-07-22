@@ -12,13 +12,19 @@ div.footer {
   width: 100%;
 
   a, span {
+    margin-right: 1.5rem;
+
     &:not(:last-child):after {
       display: inline-block;
       content: '\00a0-\00a0';
+      cursor: default;
+      vertical-align: super;
+      position: absolute;
     }
   }
 
   a, a:visited {
+    display: inline-block;
     text-decoration: none;
     color: #ffffff;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.5);

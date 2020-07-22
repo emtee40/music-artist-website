@@ -12,5 +12,8 @@
   "message": "Message",
   "sort-button-pre": "Sort releases by date (currently ",
   "sort-button-desc": "descending)",
-  "sort-button-asc": "ascending)"
+  "sort-button-asc": "ascending)",
+  "social-mail": "Send an E-Mail",
+  "social-mastodon": "Visit on Mastodon",
+
 }

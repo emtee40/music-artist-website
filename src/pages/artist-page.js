@@ -4,6 +4,7 @@ import Artist from "../components/artist/artist";
 import ScrollToTop from "../components/scroll-to-top";
 import Tracking from "../components/tracking";
 import ReleaseList from "../components/release/release-list";
+import SocialLinks from "../components/artist/social-links";
 
 function ArtistPage(props) {
 
@@ -21,6 +22,7 @@ function ArtistPage(props) {
             <Tracking/>
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
+            <SocialLinks t={t} artist={artist} />
             <h3>{t('releases-by') + artist.name}</h3>
             <ReleaseList t={t} releases={releases}/>
         </div>

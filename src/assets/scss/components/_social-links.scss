@@ -1,0 +1,28 @@
+.social-links-wrapper {
+  ul.social-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li.social-link {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      a,
+      a:active,
+      a:visited,
+      a:hover,
+      a:focus {
+        color: #fff;
+        font-size: 26px;
+        text-decoration: none;
+      }
+    }
+  }
+}

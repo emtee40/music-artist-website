@@ -4,12 +4,17 @@
       "name": "Lerk",
       "bio": "lerk-bio-long",
       "shortBio": "lerk-bio-short",
-      "contact": "lerk@kratzen-und-fauchen.com"
+      "socialLinks": {
+        "mail": "lerk@kratzen-und-fauchen.com",
+        "mastodon": "https://comm.network/@lerk"
+      }
     },{
       "name": "Padan",
       "bio": "padan-bio-long",
       "shortBio": "padan-bio-short",
-      "contact": "padan@kratzen-und-fauchen.com"
+      "socialLinks": {
+        "mail": "padan@kratzen-und-fauchen.com"
+      }
     }
   ],
   "releases": [
