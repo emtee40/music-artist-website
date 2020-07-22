@@ -6,6 +6,11 @@ div.release-list-wrapper {
   align-items: flex-start;
   flex-direction: row;
 
+  @media (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   ul.releases {
     list-style-type: none;
     display: grid;
