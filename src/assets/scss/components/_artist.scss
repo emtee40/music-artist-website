@@ -23,5 +23,9 @@
   p.artist-bio {
     width: 40%;
     font-style: italic;
+
+    @media (max-width: 850px) {
+      width: 75%;
+    }
   }
 }

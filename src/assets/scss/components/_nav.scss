@@ -15,6 +15,13 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: $blur;
 
+  @media (max-width: 850px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
   svg#logo {
     height: 48px;
     width: 48px;
@@ -37,6 +44,11 @@ nav {
   ul.nav {
     margin-right: 15%;
     list-style-type: none;
+    padding: 0;
+
+    @media (max-width: 850px) {
+      margin-right: 0;
+    }
 
     li.nav-item {
       display: inline-block;

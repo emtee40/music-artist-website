@@ -14,12 +14,15 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding-top: $nav-bar-margin;
-  padding-bottom: 16px;
+  padding: $nav-bar-margin 0 64px;
+  margin: 0;
+
+  @media (max-width: 850px) {
+    padding-top: $nav-bar-margin + 24px;
+  }
 
   @import "components/nav";
   @import "components/loader";
-  @import "components/links/cover-link";
   @import "components/links/release-link";
   @import "components/links/artist-link";
   @import "components/artist-list";
