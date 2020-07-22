@@ -26,6 +26,10 @@ div.release-link {
     opacity: 0.7;
     transition: opacity 0.2s ease-in-out;
 
+    @media (max-width: 850px) {
+      opacity: 1;
+    }
+
     &:hover {
       opacity: 1;
     }
