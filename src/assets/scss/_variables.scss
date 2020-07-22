@@ -1,3 +1,4 @@
 $nav-bar-height: 64px;
-$nav-bar-margin: $nav-bar-height + 8;
+$nav-bar-padding: 16px;
+$nav-bar-margin: $nav-bar-height + 8px + $nav-bar-padding;
 $blur: blur(8px);
