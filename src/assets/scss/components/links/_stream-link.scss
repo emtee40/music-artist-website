@@ -3,6 +3,7 @@ ul.release-links {
   display: grid;
   margin: 0;
   padding: 0;
+  grid-template-columns: 42px 42px 42px 42px;
 
   @media (max-width: 850px) {
     grid-template-columns: 42px 42px 42px;
