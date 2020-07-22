@@ -18,7 +18,7 @@ function ArtistPage(props) {
 
     return (
         artist && <div className={'wrapper'}>
-            <Tracking />
+            <Tracking/>
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
             <h3>{t('releases-by') + artist.name}</h3>

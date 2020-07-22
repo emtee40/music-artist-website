@@ -17,7 +17,7 @@ function ContactForm(props) {
                 ) {
                     errors.email = t('form:email-invalid');
                 }
-                if(!values.message) {
+                if (!values.message) {
                     errors.message = t('form:message-required');
                 }
                 return errors;

@@ -9,7 +9,7 @@ function Footer(props) {
     return (
         <div className={'footer'}>
             <span className="footer">&copy; {format(new Date(), 'yyyy')}&nbsp;{t('site-title')}</span>
-            <Link to={'/privacy'} >{t('privacy-policy')}</Link>
+            <Link to={'/privacy'}>{t('privacy-policy')}</Link>
         </div>
     );
 }

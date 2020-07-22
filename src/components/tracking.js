@@ -20,7 +20,7 @@ function Tracking(props) {
         paq.push(['setCustomVariable', 2, 'Stacktrace', error.stack, 'page']);
     }
     paq.push(['trackPageView']);
-    return (<script type={'text/javascript'} async={true} defer={true} src={u + 'matomo.js'} />);
+    return (<script type={'text/javascript'} async={true} defer={true} src={u + 'matomo.js'}/>);
 }
 
 export default Tracking;

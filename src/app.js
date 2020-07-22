@@ -29,7 +29,7 @@ function App() {
             .then(response => response.json())
             .then((jsonData) => {
                 setLoading(false);
-                setError(undefined)
+                setError(undefined);
                 setData(jsonData);
             })
             .catch((error) => {
@@ -42,12 +42,10 @@ function App() {
         <div>
             <Nav t={t}/>
             {
-                (error &&
-                    <div className={'wrapper'}>
-                        <ScrollToTop />
-                        <ErrorView t={t} errorMsg={t('data-error-text')} />
-                    </div>
-                ) ||
+                (error && <div className={'wrapper'}>
+                    <ScrollToTop/>
+                    <ErrorView t={t} errorMsg={t('data-error-text')}/>
+                </div>) ||
                 <ErrorPage t={t}>
                     {(data && <Switch>
                         <Route path={'/'} exact={true}>

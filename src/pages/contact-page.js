@@ -10,11 +10,11 @@ function ContactPage(props) {
 
     return (
         <div className={'wrapper'}>
-            <Tracking />
-            <ScrollToTop />
+            <Tracking/>
+            <ScrollToTop/>
             <h1>{t('contact')}</h1>
             <p className={'contact-text'}>{t('contact-text')}</p>
-            <ContactForm t={t} />
+            <ContactForm t={t}/>
         </div>
     );
 }

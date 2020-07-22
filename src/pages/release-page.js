@@ -14,7 +14,7 @@ function ReleasePage(props) {
 
     return (
         <div className="wrapper">
-            <Tracking />
+            <Tracking/>
             <ScrollToTop/>
             <h1>{release.title}</h1>
             <Release t={t} data={props.data} release={release}/>

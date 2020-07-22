@@ -12,7 +12,7 @@ function ArtistsPage(props) {
 
     return (
         <div className="wrapper">
-            <Tracking />
+            <Tracking/>
             <ScrollToTop/>
             <ul className={'artists-list'}>
                 {data.artists.map((artist, idx) => <li key={idx}><ArtistLink t={t} artist={artist}/></li>)}
