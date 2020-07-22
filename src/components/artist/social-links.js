@@ -1,7 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
-import {faMastodon} from "@fortawesome/free-brands-svg-icons";
+import {faGoogle, faMastodon, faSoundcloud} from "@fortawesome/free-brands-svg-icons";
 
 function SocialLinks(props) {
 
@@ -10,8 +10,7 @@ function SocialLinks(props) {
 
     return (
         <div className={'social-links-wrapper'}>
-            <h3>{t('social-links')}</h3>
-            <ul className={'social-links'}>
+            <ul className={'social-links'} aria-label={t('social-links')}>
                 {artist.socialLinks.mail &&
                 <li className={'social-link'}>
                     <a target={'_blank'} href={'mailto:' + artist.socialLinks.mail} aria-label={t('aria:social-mail')}><FontAwesomeIcon icon={faEnvelope} /></a>
@@ -19,6 +18,14 @@ function SocialLinks(props) {
                 {artist.socialLinks.mastodon &&
                 <li className={'social-link'}>
                     <a target={'_blank'} rel={'me'} href={artist.socialLinks.mastodon} aria-label={t('aria:social-mastodon')}><FontAwesomeIcon icon={faMastodon} /></a>
+                </li>}
+                {artist.socialLinks.google &&
+                <li className={'social-link'}>
+                    <a target={'_blank'} href={artist.socialLinks.google} aria-label={t('aria:social-google')}><FontAwesomeIcon icon={faGoogle} /></a>
+                </li>}
+                {artist.socialLinks.soundcloud &&
+                <li className={'social-link'}>
+                    <a target={'_blank'} href={artist.socialLinks.soundcloud} aria-label={t('aria:social-soundcloud')}><FontAwesomeIcon icon={faSoundcloud} /></a>
                 </li>}
             </ul>
         </div>

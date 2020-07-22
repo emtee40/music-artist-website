@@ -1,4 +1,11 @@
 .social-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-bottom: 16px;
+
   ul.social-links {
     margin: 0;
     padding: 0;
