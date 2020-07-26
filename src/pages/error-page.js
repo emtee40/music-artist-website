@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Tracking from "../components/tracking";
 import ErrorView from "../components/error-view";
 import ScrollToTop from "../components/scroll-to-top";
 
@@ -19,12 +18,13 @@ export default class ErrorPage extends Component {
 
     }
 
+    /*TODO: (re-)add error tracking*/
+
     render() {
         if (this.state.hasError) {
             return (
                 <div className={'wrapper'}>
                     <ScrollToTop/>
-                    <Tracking error={this.state.error}/>
                     <ErrorView t={this.t} errorMsg={this.t('javascript-error-text')}/>
                 </div>
             );

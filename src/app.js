@@ -15,12 +15,16 @@ import Footer from "./components/footer";
 import PrivacyPage from "./pages/privacy-page";
 import ScrollToTop from "./components/scroll-to-top";
 import ErrorView from "./components/error-view";
+import {useMatomo} from "@datapunt/matomo-tracker-react";
 
 function App() {
     const {t} = useTranslation();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(undefined);
     const [data, setData] = useState(undefined);
+    const { enableLinkTracking } = useMatomo();
+
+    enableLinkTracking();
 
     useEffect(() => {
         if (loading) return;

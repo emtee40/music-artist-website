@@ -1,9 +1,17 @@
 import React from 'react';
 import ScrollToTop from "../components/scroll-to-top";
+import {useMatomo} from "@datapunt/matomo-tracker-react";
 
 function PrivacyPage(props) {
 
     const t = props.t;
+    const { trackPageView, trackEvent } = useMatomo();
+
+    document.title = t('privacy') + ' - ' + t('site-title');
+
+    React.useEffect(() => {
+        trackPageView()
+    }, []);
 
     return (
         <div className={'wrapper'}>
