@@ -11,7 +11,6 @@ import {getRandomInt} from "./util";
 import {Data} from "./types/data";
 
 const ErrorPage = React.lazy(() => import('./pages/error-page'));
-const MainPage = React.lazy(() => import('./pages/main-page'));
 const AboutPage = React.lazy(() => import('./pages/about-page'));
 const ContactPage = React.lazy(() => import('./pages/contact-page'));
 const ReleasesPage = React.lazy(() => import('./pages/releases-page'));
@@ -56,9 +55,6 @@ function App() {
                 <ErrorPage t={t}>
                     {(data && <Switch>
                         <Route path={'/'} exact={true}>
-                            <MainPage t={t}/>
-                        </Route>
-                        <Route path={'/about'} exact={true}>
                             <AboutPage t={t}/>
                         </Route>
                         <Route path={'/contact'} exact={true}>

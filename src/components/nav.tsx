@@ -17,10 +17,7 @@ function Nav(props: Props) {
             </Link>
             <ul className={'nav'}>
                 <li className="nav-item">
-                    <NavLink activeClassName={'active'} exact={true} to={'/'}>{t('home')}</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink activeClassName={'active'} to={'/about'}>{t('about')}</NavLink>
+                    <NavLink activeClassName={'active'} exact={true} to={'/'}>{t('about')}</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink activeClassName={'active'} to={'/artists'}>{t('artists')}</NavLink>
