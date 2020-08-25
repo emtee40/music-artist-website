@@ -1,7 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
-import {faGoogle, faMastodon, faSoundcloud} from "@fortawesome/free-brands-svg-icons";
+import {faGoogle, faMastodon, faSoundcloud, faYoutube} from "@fortawesome/free-brands-svg-icons";
 
 function SocialLinks(props) {
 
@@ -26,6 +26,10 @@ function SocialLinks(props) {
                 {artist.socialLinks.soundcloud &&
                 <li className={'social-link'}>
                     <a target={'_blank'} href={artist.socialLinks.soundcloud} aria-label={t('aria:social-soundcloud')}><FontAwesomeIcon icon={faSoundcloud} /></a>
+                </li>}
+                {artist.socialLinks.youtube &&
+                <li className={'social-link'}>
+                    <a target={'_blank'} href={artist.socialLinks.youtube} aria-label={t('aria:social-soundcloud')}><FontAwesomeIcon icon={faYoutube} /></a>
                 </li>}
             </ul>
         </div>
