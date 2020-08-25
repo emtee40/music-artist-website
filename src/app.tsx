@@ -25,7 +25,7 @@ function App() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<Error | undefined>(undefined);
     const [data, setData] = useState<Data | undefined>(undefined);
-    const { enableLinkTracking } = useMatomo();
+    const {enableLinkTracking} = useMatomo();
 
     enableLinkTracking();
 
@@ -53,7 +53,6 @@ function App() {
                     <ScrollToTop/>
                     <ErrorView t={t} errorMsg={t('data-error-text')}/>
                 </div>) ||
-
                 <ErrorPage t={t}>
                     {(data && <Switch>
                         <Route path={'/'} exact={true}>
