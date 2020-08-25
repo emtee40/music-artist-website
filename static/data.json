@@ -10,14 +10,16 @@
         "google": "https://g.co/kgs/jd5X7e",
         "soundcloud": "https://soundcloud.com/1erk"
       }
-    },{
+    },
+    {
       "name": "Padan",
       "bio": "padan-bio-long",
       "shortBio": "padan-bio-short",
       "socialLinks": {
         "mail": "padan@kratzen-und-fauchen.com"
       }
-    },{
+    },
+    {
       "name": "Paula Barbara",
       "bio": "paula-barbara-bio-long",
       "shortBio": "paula-barbara-bio-short",
@@ -28,6 +30,64 @@
     }
   ],
   "releases": [
+    {
+      "title": "Sleep/Wake",
+      "artists": [
+        "Lerk"
+      ],
+      "label": "Kratzen und Fauchen",
+      "explicit": false,
+      "copyright": "2020 Lukas Fülling",
+      "ean": "5059580330552",
+      "genres": [
+        "Techno",
+        "Tech House"
+      ],
+      "date": "2020-08-21",
+      "tracks": [
+        {
+          "title": "Sleep",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "UKXN21909385",
+          "copyright": "2020 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Wake",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Original Mix",
+          "isrc": "UKXN21909387",
+          "copyright": "2020 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        },
+        {
+          "title": "Truth",
+          "artists": [
+            "Lerk"
+          ],
+          "version": "Early Draft Mix",
+          "isrc": "UKXN21909386",
+          "copyright": "2020 Lukas Fülling",
+          "recording": "Lukas Fülling"
+        }
+      ],
+      "links": {
+        "apple": "https://music.apple.com/album/1528694988",
+        "spotify": "https://open.spotify.com/album/4ZTm1R0H9atGZ6e8eCUlcC",
+        "youtube": "https://www.youtube.com/playlist?list=OLAK5uy_kIeDCrY2WRJMhB6-eZ4TNyh-fV_JecKCg",
+        "deezer": "https://www.deezer.com/album/168567592",
+        "soundcloud": "https://soundcloud.com/1erk/sets/sleep-wake",
+        "amazon": "https://music.amazon.com/albums/B08GGB6JLV?do=play",
+        "tidal": "https://listen.tidal.com/album/152718688",
+        "napster": "https://napster.com/album/alb.505113115",
+        "yandex": "https://music.yandex.ru/album/11870765"
+      }
+    },
     {
       "title": "Serenity",
       "artists": [
