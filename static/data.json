@@ -17,6 +17,14 @@
       "socialLinks": {
         "mail": "padan@kratzen-und-fauchen.com"
       }
+    },{
+      "name": "Paula Barbara",
+      "bio": "paula-barbara-bio-long",
+      "shortBio": "paula-barbara-bio-short",
+      "socialLinks": {
+        "mail": "paulabarbara@kratzen-und-fauchen.com",
+        "youtube": "https://www.youtube.com/channel/UCQIKWMSW7IomyZATvtr6dNg"
+      }
     }
   ],
   "releases": [
