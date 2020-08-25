@@ -11,10 +11,12 @@ const matomo = createInstance({
 })
 
 ReactDOM.render(
-    <MatomoProvider value={matomo}>
-        <Suspense fallback={'loading'}>
-            <Router>
-                <App/>
-            </Router>
-        </Suspense>
-    </MatomoProvider>, document.getElementById('root'));
+    <React.StrictMode>
+        <MatomoProvider value={matomo}>
+            <Suspense fallback={'loading'}>
+                <Router>
+                    <App/>
+                </Router>
+            </Suspense>
+        </MatomoProvider>
+    </React.StrictMode>, document.getElementById('root'));

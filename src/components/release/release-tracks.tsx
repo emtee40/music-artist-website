@@ -26,7 +26,7 @@ function ReleaseTracks(props: Props) {
                                 <dt>{t('title')}</dt>
                                 <dd>{track.title}&nbsp;({track.version})</dd>
                                 <dt>{t('artists')}</dt>
-                                <dd><ArtistList data={props.data} artists={release.artists}/></dd>
+                                <dd><ArtistList t={t} data={props.data} artists={release.artists}/></dd>
                                 <dt>{t('isrc')}</dt>
                                 <dd>{track.isrc}</dd>
                                 <dt>{t('copyright')}</dt>

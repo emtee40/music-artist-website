@@ -22,14 +22,14 @@ function ArtistPage(props: Props) {
     const {trackPageView, trackEvent} = useMatomo()
 
     if (!data.releases || !data.artists) {
-        return;
+        return null;
     }
 
     const releases = data.releases.filter(release => release.artists && release.artists.map(toSlug).includes(slug));
     const artist = data.artists.find(artist => toSlug(artist.name) === slug);
 
     if (!artist) {
-        return;
+        return null;
     }
 
     const pageTitle = artist.name + ' - ' + t('site-title')

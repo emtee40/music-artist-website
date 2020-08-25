@@ -19,14 +19,14 @@ function ReleasePage(props: Props) {
     const releases = props.data.releases;
 
     if(!releases) {
-        return;
+        return null;
     }
 
     const release = releases.find((rel: Release) => rel.ean === ean);
     const {trackPageView, trackEvent} = useMatomo();
 
     if (!release) {
-        return;
+        return null;
     }
 
     const pageTitle = release.title + ' - ' + t('site-title');

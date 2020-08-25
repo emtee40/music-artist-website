@@ -25,7 +25,7 @@ function ArtistsPage(props: Props) {
     }, []);
 
     if(!data.artists) {
-        return;
+        return null;
     }
 
     return (

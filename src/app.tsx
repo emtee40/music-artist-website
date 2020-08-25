@@ -17,12 +17,13 @@ import ScrollToTop from "./components/scroll-to-top";
 import ErrorView from "./components/error-view";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
 import {getRandomInt} from "./util";
+import {Data} from "./types/data";
 
 function App() {
     const {t} = useTranslation();
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(undefined);
-    const [data, setData] = useState(undefined);
+    const [error, setError] = useState<Error | undefined>(undefined);
+    const [data, setData] = useState<Data | undefined>(undefined);
     const { enableLinkTracking } = useMatomo();
 
     enableLinkTracking();
@@ -44,7 +45,7 @@ function App() {
     }, [])
 
     return (
-        <div>
+        <>
             <Nav t={t}/>
             {
                 (error && <div className={'wrapper'}>
@@ -87,7 +88,7 @@ function App() {
                 </ErrorPage>
             }
             <Footer t={t}/>
-        </div>
+        </>
     );
 }
 
