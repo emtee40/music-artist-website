@@ -3,6 +3,7 @@ import {initReactI18next} from 'react-i18next';
 
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import {getRandomInt} from "./util";
 // not like to use this?
 // have a look at the Quick start guide
 // for passing in lng and translations on init
@@ -28,7 +29,7 @@ i18n
             // returning a path:
             // function(lngs, namespaces) { return customPath; }
             // the returned path will interpolate lng, ns if provided like giving a static path
-            loadPath: '/locales/{{lng}}/{{ns}}.json',
+            loadPath: '/locales/{{lng}}/{{ns}}.json?' + getRandomInt(1000,9999),
         },
 
         interpolation: {

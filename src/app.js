@@ -16,6 +16,7 @@ import PrivacyPage from "./pages/privacy-page";
 import ScrollToTop from "./components/scroll-to-top";
 import ErrorView from "./components/error-view";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {getRandomInt} from "./util";
 
 function App() {
     const {t} = useTranslation();
@@ -29,7 +30,7 @@ function App() {
     useEffect(() => {
         if (loading) return;
         setLoading(true);
-        fetch("/data.json")
+        fetch("/data.json?" + getRandomInt(1000, 9999))
             .then(response => response.json())
             .then((jsonData) => {
                 setLoading(false);
