@@ -5,6 +5,7 @@ import {TFunction} from "i18next";
 
 type Props = {
     t: TFunction
+    children?: React.ReactNode
 }
 
 type State = {

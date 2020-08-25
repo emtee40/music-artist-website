@@ -2,8 +2,9 @@ import App from "./app";
 import React, {Suspense} from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter as Router} from "react-router-dom";
-import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react'
+import {createInstance, MatomoProvider} from '@datapunt/matomo-tracker-react'
 import './i18n';
+import Loader from "./components/loader";
 
 const matomo = createInstance({
     urlBase: 'https://analytics.lrk.sh/',
@@ -13,7 +14,7 @@ const matomo = createInstance({
 ReactDOM.render(
     <React.StrictMode>
         <MatomoProvider value={matomo}>
-            <Suspense fallback={'loading'}>
+            <Suspense fallback={<Loader/>}>
                 <Router>
                     <App/>
                 </Router>

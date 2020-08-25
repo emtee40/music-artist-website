@@ -1,23 +1,24 @@
 import React, {useEffect, useState} from 'react';
 import {Route, Switch} from "react-router";
 import Nav from "./components/nav";
-import ReleasesPage from "./pages/releases-page";
 import Loader from "./components/loader";
-import ReleasePage from "./pages/release-page";
-import ArtistPage from "./pages/artist-page";
-import ArtistsPage from "./pages/artists-page";
 import {useTranslation} from 'react-i18next';
-import ErrorPage from "./pages/error-page";
-import ContactPage from "./pages/contact-page";
-import MainPage from "./pages/main-page";
-import AboutPage from "./pages/about-page";
 import Footer from "./components/footer";
-import PrivacyPage from "./pages/privacy-page";
 import ScrollToTop from "./components/scroll-to-top";
 import ErrorView from "./components/error-view";
-import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {useMatomo} from '@datapunt/matomo-tracker-react';
 import {getRandomInt} from "./util";
 import {Data} from "./types/data";
+
+const ErrorPage = React.lazy(() => import('./pages/error-page'));
+const MainPage = React.lazy(() => import('./pages/main-page'));
+const AboutPage = React.lazy(() => import('./pages/about-page'));
+const ContactPage = React.lazy(() => import('./pages/contact-page'));
+const ReleasesPage = React.lazy(() => import('./pages/releases-page'));
+const ArtistsPage = React.lazy(() => import('./pages/artists-page'));
+const PrivacyPage = React.lazy(() => import('./pages/privacy-page'));
+const ReleasePage = React.lazy(() => import('./pages/release-page'));
+const ArtistPage = React.lazy(() => import('./pages/artist-page'));
 
 function App() {
     const {t} = useTranslation();
@@ -52,6 +53,7 @@ function App() {
                     <ScrollToTop/>
                     <ErrorView t={t} errorMsg={t('data-error-text')}/>
                 </div>) ||
+
                 <ErrorPage t={t}>
                     {(data && <Switch>
                         <Route path={'/'} exact={true}>

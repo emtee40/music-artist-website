@@ -3,15 +3,16 @@ import KFLogo from '../assets/images/logo.svg';
 import {TFunction} from "i18next";
 
 type Props = {
-    t: TFunction
+    t?: TFunction
 }
 
 function Loader(props: Props) {
-    const t = props.t;
+    const loadingText = props.t !== undefined ? props.t('loading') : 'Loading';
+
     return (
         <div className={'loader-wrapper'}>
-            <KFLogo id={'loader'} alt={t('loading') + '...'}/>
-            <p className={'loading-text'}>{t('loading')}</p>
+            <KFLogo id={'loader'} alt={loadingText + '...'}/>
+            <p className={'loading-text'}>{loadingText}</p>
         </div>
     );
 }
