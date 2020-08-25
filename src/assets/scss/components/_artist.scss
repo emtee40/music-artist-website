@@ -1,11 +1,11 @@
 @import "../variables";
 
 .artist {
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 24px;
 
   img {
     height: 128px;

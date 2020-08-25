@@ -2,5 +2,7 @@
   "email-required": "E-Mail address is required",
   "email-invalid": "Invalid email address",
   "message-required": "A message is required",
-  "submit": "Submit!"
+  "submit": "Submit!",
+  "email": "E-Mail address",
+  "message": "Your message to us..."
 }

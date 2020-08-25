@@ -21,7 +21,7 @@ function PrivacyPage(props: Props) {
     }, []);
 
     return (
-        <div className={'wrapper'}>
+        <div className={'privacy wrapper'}>
             <ScrollToTop/>
             <h1>{t('privacy')}</h1>
             <p>{t('content:privacy-paragraph-1')}</p>

@@ -52,6 +52,7 @@ function ContactForm(props: Props) {
                         type="email"
                         name="email"
                         aria-label={t('aria:email')}
+                        placeholder={t('form:email')}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.email}
@@ -59,6 +60,7 @@ function ContactForm(props: Props) {
                     <textarea
                         name={'message'}
                         aria-label={t('aria:message')}
+                        placeholder={t('form:message')}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         value={values.message}
