@@ -36,13 +36,18 @@ div.release {
       display: flex;
       flex-direction: column;
 
-      dt {
-        color: #AAA;
-        font-weight: bold;
-      }
-
       dl.release-meta {
+        dt {
+          font-size: 10px;
+          color: #AAA;
+          font-weight: bold;
+        }
 
+        dd {
+          font-size: 13px;
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
       }
 
       @import "src/assets/scss/components/links/stream-link";

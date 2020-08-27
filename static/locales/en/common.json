@@ -30,5 +30,6 @@
   "javascript-error-text": "Unfortunately an application error occurred. If you think it's a bug, please don't hesitate to contact us.",
   "data-error-text": "There was an error fetching the application data. Please check your internet connection, try reloading the page and contact us in case the problem persists.",
   "social-links": "Social Links",
-  "open-source": "Source Code"
+  "open-source": "Source Code",
+  "artist_s": "Artist(s)"
 }
