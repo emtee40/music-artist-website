@@ -1,17 +1,14 @@
+@import "../../variables";
 
 .release-tracks-wrapper {
   margin-top: 64px;
-  margin-left: 64px;
+  margin-left: 0;
   width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  @media (max-width: 800px) {
-    margin-left: 0;
-  }
 
   ol.release-tracks {
     margin: 0;

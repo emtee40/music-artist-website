@@ -19,6 +19,7 @@ export default class ErrorPage extends Component<Props, State> {
         this.state = {hasError: false, error: undefined};
     }
 
+    // noinspection JSUnusedGlobalSymbols
     static getDerivedStateFromError(error: Error) {
         return {hasError: true, error: error};
     }

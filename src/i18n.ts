@@ -18,7 +18,8 @@ i18n.use(Backend)
         interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
         }
-    });
+    }).then(() => {});
 
 
+// noinspection JSUnusedGlobalSymbols
 export default i18n;
