@@ -19,21 +19,36 @@
     display: grid;
     grid-template-columns: 320px 320px;
     font-size: 13px;
+    list-style-type: none;
 
-    @media (min-width: 1099px) {
+    @media (min-width: $break-width-md + 64px) {
       grid-template-columns: 320px 320px 320px;
     }
 
-    @media (min-width: 1500px) {
+    @media (min-width: $break-width-xl) {
       grid-template-columns: 320px 320px 320px 320px;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: $break-width-sm + 45px) {
       grid-template-columns: 280px;
     }
 
     li.release-track {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+
       dl.track-meta {
+
+        @media (max-width: $break-width-sm + 45px) {
+          text-align: center;
+        }
+
         dt {
           font-size: 10px;
           color: #AAA;
@@ -43,6 +58,12 @@
           font-size: 13px;
           margin-left: 0;
           margin-bottom: 10px;
+
+          &:first-child:after {
+            /* Track number dot */
+            content: '.';
+            display: inline;
+          }
         }
       }
 

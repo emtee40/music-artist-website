@@ -37,7 +37,7 @@ function ReleasePage(props: Props) {
     }, []);
 
     return (
-        <div className="wrapper">
+        <div className="release wrapper">
             <ScrollToTop/>
             <h1>{release.title}</h1>
             <ReleaseComponent t={t} data={props.data} release={release}/>

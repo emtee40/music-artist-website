@@ -13,14 +13,19 @@ nav {
   align-items: center;
   z-index: 80;
   background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
   backdrop-filter: $blur;
 
-  @media (max-width: 850px) {
+  @media (max-width: $break-width-md) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding-left: 0;
-    height: 90px;
+    height: $nav-bar-height-mobile;
+  }
+
+  @media (max-width: $break-width-xs) {
+    height: $nav-bar-height-xs;
   }
 
   svg#logo {
@@ -47,8 +52,18 @@ nav {
     list-style-type: none;
     padding: 0;
 
-    @media (max-width: 850px) {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $break-width-md) {
       margin-right: 0;
+    }
+
+    @media (max-width: $break-width-xs) {
+      display: grid;
+      grid-template-columns: auto auto;
     }
 
     li.nav-item {

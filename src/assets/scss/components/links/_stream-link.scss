@@ -5,7 +5,7 @@ ul.release-links {
   padding: 0;
   grid-template-columns: 42px 42px 42px 42px;
 
-  @media (max-width: 850px) {
+  @media (max-width: $break-width-md) {
     grid-template-columns: 42px 42px 42px;
   }
 

@@ -23,6 +23,7 @@ function ReleaseTracks(props: Props) {
                     return (
                         <li key={idx} className={'release-track'}>
                             <dl className={'track-meta'}>
+                                <dd aria-label={t('track-no') + ': ' + (idx + 1)}>{idx + 1}</dd>
                                 <dt>{t('title')}</dt>
                                 <dd>{track.title}&nbsp;({track.version})</dd>
                                 <dt>{t('artist_s')}</dt>

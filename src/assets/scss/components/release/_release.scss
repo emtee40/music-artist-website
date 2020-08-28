@@ -21,13 +21,18 @@ div.release {
       cursor: zoom-in;
 
       img.cover {
-        height: 320px;
-        width: 320px;
+        height: $cover-size;
+        width: $cover-size;
         border-radius: 5px;
         margin-right: 64px;
 
-        @media (max-width: 850px) {
+        @media (max-width: $break-width-md) {
           margin-right: 0;
+        }
+
+        @media (max-width: $break-width-xs) {
+          height: $cover-size-xs;
+          width: $cover-size-xs;
         }
       }
     }
@@ -68,16 +73,29 @@ div.release {
       .release-data__inner {
         flex-direction: row;
 
-        @media (max-width: 850px) {
+        @media (max-width: $break-width-md) {
           display: grid;
           grid-template-columns: 50% 50%;
+        }
+
+        @media (max-width: $break-width-sm) {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
         }
 
         > div.release-links__wrapper {
           margin-left: 64px;
 
-          @media (max-width: 850px) {
+          @media (max-width: $break-width-md) {
             margin-left: 0;
+          }
+
+          @media (max-width: $break-width-sm) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
         }
       }

@@ -11,6 +11,14 @@ div.footer {
   overflow: hidden;
   width: 100%;
 
+  @media(max-width: $break-width-sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+  }
+
   a, span {
     margin-right: 1.5rem;
 
@@ -20,6 +28,10 @@ div.footer {
       cursor: default;
       vertical-align: super;
       position: absolute;
+
+      @media(max-width: $break-width-sm) {
+        display: none;
+      }
     }
   }
 

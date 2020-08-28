@@ -13,7 +13,7 @@ function Footer(props: Props) {
 
     return (
         <div className={'footer'}>
-            <span className="footer">&copy; {format(new Date(), 'yyyy')}&nbsp;{t('site-title')}</span>
+            <span>&copy;&nbsp;{format(new Date(), 'yyyy')}&nbsp;{t('site-title')}</span>
             <Link to={'/privacy'}>{t('privacy-policy')}</Link>
             <a href={'https://github.com/lfuelling/kfsite'}>{t('open-source')}</a>
         </div>

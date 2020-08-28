@@ -17,12 +17,19 @@ body {
   padding: $nav-bar-margin 0 64px;
   margin: 0;
 
-  @media (max-width: 850px) {
-    padding-top: $nav-bar-margin + 24px;
+  min-height: 350px;
+
+  @media (max-width: $break-width-md) {
+    padding-top: $nav-bar-margin-md;
+  }
+
+  @media (max-width: $break-width-xs) {
+    padding-top: $nav-bar-margin-xs;
   }
 
   @import "pages/about";
   @import "pages/artists";
+  @import "pages/release";
   @import "pages/contact";
   @import "pages/privacy";
   @import "components/nav";

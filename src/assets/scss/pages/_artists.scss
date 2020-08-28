@@ -2,11 +2,11 @@ ul.artists-list {
   list-style-type: none;
 
   display: flex;
-  align-content: space-between;
+  align-items: center;
   justify-items: center;
   flex-direction: row;
 
-  @media (max-width: 500px) {
+  @media (max-width: $break-width-sm) {
     flex-direction: column;
   }
 
@@ -16,5 +16,6 @@ ul.artists-list {
   li {
     margin-top: 16px;
     margin-bottom: 16px;
+    text-align: center;
   }
 }

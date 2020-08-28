@@ -1,4 +1,20 @@
+$blur: blur(8px);
+
+/* Breakpoints */
+$break-width-md: 850px;
+$break-width-sm: 500px;
+$break-width-xs: 300px;
+$break-width-lg: 1220px;
+$break-width-xl: 1750px;
+
+/* Navbar */
 $nav-bar-height: 64px;
+$nav-bar-height-mobile: 90px;
+$nav-bar-height-xs: 140px;
 $nav-bar-padding: 16px;
 $nav-bar-margin: $nav-bar-height + 8px + $nav-bar-padding;
-$blur: blur(8px);
+$nav-bar-margin-md: $nav-bar-height-mobile + 8px + $nav-bar-padding;
+$nav-bar-margin-xs: $nav-bar-height-xs + 8px + $nav-bar-padding;
+
+$cover-size: 320px;
+$cover-size-xs: $cover-size /2;
