@@ -8,7 +8,13 @@ ul.artists-list {
   justify-items: center;
   flex-direction: row;
 
-  @media (max-width: $break-width-sm) {
+  @media (min-width: $break-width-sm) and (max-width: $break-width-md) {
+    display: grid;
+    grid-template-columns: $artist-link-width $artist-link-width;
+  }
+
+  @media (max-width: $artist-link-width*2) {
+    display: flex;
     flex-direction: column;
   }
 
