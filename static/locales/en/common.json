@@ -32,5 +32,6 @@
   "data-error-text": "There was an error fetching the application data. Please check your internet connection, try reloading the page and contact us in case the problem persists.",
   "social-links": "Social Links",
   "open-source": "Source Code",
-  "artist_s": "Artist(s)"
+  "artist_s": "Artist(s)",
+  "has-no-releases": " has not released anything so far…"
 }

@@ -2,7 +2,7 @@
 
 Website for Kratzen und Fauchen.
 
-Someday it will be at https://kratzen-und-fauchen.com...
+Someday it will be at https://kratzen-und-fauchen.com…
 
 ## Development
 

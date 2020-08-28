@@ -45,8 +45,10 @@ function ArtistPage(props: Props) {
             <ScrollToTop/>
             <Artist t={t} artist={artist}/>
             <SocialLinks t={t} artist={artist}/>
-            <h3>{t('releases-by') + artist.name}</h3>
-            <ReleaseList t={t} releases={releases}/>
+            {releases.length > 0 && <>
+                <h3>{t('releases-by') + artist.name}</h3>
+                <ReleaseList t={t} releases={releases}/>
+            </> || <p>{artist.name + t('has-no-releases')}</p>}
         </div>
     );
 }

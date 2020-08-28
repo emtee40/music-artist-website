@@ -11,7 +11,7 @@ function Loader(props: Props) {
 
     return (
         <div className={'loader-wrapper'}>
-            <KFLogo id={'loader'} alt={loadingText + '...'}/>
+            <KFLogo id={'loader'} alt={loadingText + '…'}/>
             <p className={'loading-text'}>{loadingText}</p>
         </div>
     );
