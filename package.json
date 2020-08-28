@@ -14,11 +14,14 @@
   },
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf dist && rimraf .cache",
+    "clean:dist": "rimraf dist",
+    "clean:cache": "rimraf .cache",
+    "clean:archive": "rimraf kfsite.zip",
     "clean:report": "rimraf dist/report.html",
     "build:archive": "cd dist && zip -r -X ../kfsite.zip .",
     "build:site": "npx parcel build src/index.html",
-    "build": "npm run clean && npm run build:site && npm run clean:report && npm run build:archive",
+    "clean": "run-s clean:dist clean:cache clean:archive",
+    "build": "run-s clean build:site clean:report build:archive",
     "start": "npx parcel src/index.html",
     "test": "echo \"Warning: no tests specified\""
   },
@@ -61,6 +64,7 @@
   "devDependencies": {
     "@svgr/parcel-plugin-svgr": "^5.4.0",
     "date-fns": "^2.15.0",
+    "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-browserconfig": "^1.0.5",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
