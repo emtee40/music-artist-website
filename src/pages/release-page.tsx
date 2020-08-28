@@ -23,7 +23,7 @@ function ReleasePage(props: Props) {
     }
 
     const release = releases.find((rel: Release) => rel.ean === ean);
-    const {trackPageView, trackEvent} = useMatomo();
+    const {trackPageView} = useMatomo();
 
     if (!release) {
         return null;

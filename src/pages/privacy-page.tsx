@@ -10,7 +10,7 @@ type Props = {
 function PrivacyPage(props: Props) {
 
     const t = props.t;
-    const { trackPageView, trackEvent } = useMatomo();
+    const { trackPageView } = useMatomo();
 
     const pageTitle = t('privacy') + ' - ' + t('site-title');
 

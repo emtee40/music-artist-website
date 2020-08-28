@@ -11,7 +11,7 @@ type Props = {
 function ContactPage(props: Props) {
 
     const t = props.t;
-    const { trackPageView, trackEvent } = useMatomo();
+    const { trackPageView } = useMatomo();
     const pageTitle = t('contact') + ' - ' + t('site-title');
 
     document.title = pageTitle;

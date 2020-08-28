@@ -14,7 +14,7 @@ type Props = {
 function ArtistsPage(props: Props) {
     const t = props.t;
     const data = props.data;
-    const { trackPageView, trackEvent } = useMatomo();
+    const { trackPageView } = useMatomo();
     const pageTitle = t('artists') + ' - ' + t('site-title');
 
     document.title = pageTitle;

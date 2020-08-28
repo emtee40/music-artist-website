@@ -19,7 +19,7 @@ function ArtistPage(props: Props) {
     const t = props.t;
     const data = props.data;
     const slug = props.slug;
-    const {trackPageView, trackEvent} = useMatomo()
+    const {trackPageView} = useMatomo()
 
     if (!data.releases || !data.artists) {
         return null;

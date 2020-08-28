@@ -10,7 +10,7 @@ type Props = {
 function AboutPage(props: Props) {
 
     const t = props.t;
-    const { trackPageView, trackEvent } = useMatomo();
+    const { trackPageView } = useMatomo();
     const pageTitle = t('about') + ' - ' + t('site-title')
 
     document.title = pageTitle;
