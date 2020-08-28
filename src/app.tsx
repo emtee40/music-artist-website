@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {Route, Switch} from "react-router";
-import Nav from "./components/nav";
-import Loader from "./components/loader";
 import {useTranslation} from 'react-i18next';
-import Footer from "./components/footer";
-import ScrollToTop from "./components/scroll-to-top";
-import ErrorView from "./components/error-view";
 import {useMatomo} from '@datapunt/matomo-tracker-react';
 import {getRandomInt} from "./util";
 import {Data} from "./types/data";
 
+const Nav = React.lazy(() => import('./components/nav'));
+const Loader = React.lazy(() => import('./components/loader'));
+const Footer = React.lazy(() => import('./components/footer'));
+const ScrollToTop = React.lazy(() => import('./components/scroll-to-top'));
+const ErrorView = React.lazy(() => import('./components/error-view'));
 const ErrorPage = React.lazy(() => import('./pages/error-page'));
 const AboutPage = React.lazy(() => import('./pages/about-page'));
 const ContactPage = React.lazy(() => import('./pages/contact-page'));
