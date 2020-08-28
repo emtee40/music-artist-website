@@ -27,6 +27,7 @@ function PrivacyPage(props: Props) {
             <p>{t('content:privacy-paragraph-1')}</p>
             <p>{t('content:privacy-paragraph-2')}</p>
             <p>{t('content:privacy-paragraph-3')}</p>
+            <p>{t('content:privacy-paragraph-4')}</p>
         </div>
     );
 }
