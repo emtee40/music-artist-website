@@ -15,8 +15,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist && rimraf .cache",
-    "build:prod": "npx parcel build src/index.html",
-    "build": "npm run clean && npm run build:prod",
+    "clean:report": "rimraf dist/report.html",
+    "build:archive": "cd dist && zip -r -X ../kfsite.zip .",
+    "build:site": "npx parcel build src/index.html",
+    "build": "npm run clean && npm run build:site && npm run clean:report && npm run build:archive",
     "start": "npx parcel src/index.html",
     "test": "echo \"Warning: no tests specified\""
   },
