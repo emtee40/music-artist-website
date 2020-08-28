@@ -12,7 +12,6 @@ type Props = {
 }
 
 function ArtistsPage(props: Props) {
-
     const t = props.t;
     const data = props.data;
     const { trackPageView, trackEvent } = useMatomo();
@@ -31,6 +30,7 @@ function ArtistsPage(props: Props) {
     return (
         <div className="wrapper">
             <ScrollToTop/>
+            <h1>{t('artists')}</h1>
             <ul className={'artists-list'}>
                 {data.artists.map((artist: Artist, idx: number) => <li key={idx}><ArtistLink t={t} artist={artist}/></li>)}
             </ul>

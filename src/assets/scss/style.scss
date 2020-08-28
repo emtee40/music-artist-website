@@ -27,6 +27,10 @@ body {
     padding-top: $nav-bar-margin-xs;
   }
 
+  h1 {
+    font-size: 2.5em;
+  }
+
   @import "pages/about";
   @import "pages/artists";
   @import "pages/release";
