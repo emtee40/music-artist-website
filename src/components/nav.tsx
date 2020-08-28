@@ -25,9 +25,11 @@ function Nav(props: Props) {
                 <li className="nav-item">
                     <NavLink activeClassName={'active'} to={'/releases'}>{t('releases')}</NavLink>
                 </li>
+                {/*
                 <li className="nav-item">
                     <NavLink activeClassName={'active'} to={'/contact'}>{t('contact')}</NavLink>
                 </li>
+                */}
             </ul>
         </nav>
     );

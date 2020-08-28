@@ -12,7 +12,7 @@ const Loader = React.lazy(() => import('./components/loader'));
 const Footer = React.lazy(() => import('./components/footer'));
 const ErrorPage = React.lazy(() => import('./pages/error-page'));
 const AboutPage = React.lazy(() => import('./pages/about-page'));
-const ContactPage = React.lazy(() => import('./pages/contact-page'));
+//const ContactPage = React.lazy(() => import('./pages/contact-page'));
 const ReleasesPage = React.lazy(() => import('./pages/releases-page'));
 const ArtistsPage = React.lazy(() => import('./pages/artists-page'));
 const PrivacyPage = React.lazy(() => import('./pages/privacy-page'));
@@ -57,9 +57,11 @@ function App() {
                         <Route path={'/'} exact={true}>
                             <AboutPage t={t}/>
                         </Route>
+                        {/*
                         <Route path={'/contact'} exact={true}>
                             <ContactPage t={t}/>
                         </Route>
+                        */}
                         <Route path={'/releases'} exact={true}>
                             <ReleasesPage t={t} data={data}/>
                         </Route>
