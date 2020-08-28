@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lfuelling/kfsite.git"
+    "url": "https://git.lrk.sh/lerk/kfsite.git"
   },
   "bugs": {
-    "url": "https://github.com/lfuelling/kfsite/issues"
+    "url": "https://git.lrk.sh/lerk/kfsite/issues"
   },
   "staticFiles": {
     "staticPath": "static",
