@@ -2,9 +2,9 @@
 
 Website for Kratzen und Fauchen.
 
-Someday it will be at https://kratzen-und-fauchen.com…
+Someday it will be at [https://kratzen-und-fauchen.com](https://kratzen-und-fauchen.com)…
 
-## Development
+## Development Notes
 
 - It's *required* that the `svg` element in `logo.svg` has the property `pointer-events="bounding-box"`!!!
     - If you edit that file with any image tool check it's still in there!
