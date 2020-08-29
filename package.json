@@ -34,7 +34,8 @@
   },
   "staticFiles": {
     "staticPath": "static",
-    "watcherGlob": "**"
+    "watcherGlob": "**",
+    "excludeGlob": "**/.DS_Store"
   },
   "dependencies": {
     "@datapunt/matomo-tracker-react": "^0.1.5",
