@@ -5,9 +5,9 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  height: $nav-bar-height;
+  height: $navbar-height;
   width: 100%;
-  padding: $nav-bar-padding 10%;
+  padding: $navbar-padding 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,16 +21,16 @@ nav {
     align-items: center;
     justify-content: flex-start;
     padding-left: 0;
-    height: $nav-bar-height-mobile;
+    height: $navbar-height-mobile;
   }
 
   @media (max-width: $break-width-xs) {
-    height: $nav-bar-height-xs;
+    height: $navbar-height-xs;
   }
 
   svg#logo {
-    height: 48px;
-    width: 48px;
+    height: $navbar-logo-size;
+    width: $navbar-logo-size;
 
     cursor: pointer;
 

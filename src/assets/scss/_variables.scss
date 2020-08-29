@@ -8,13 +8,14 @@ $break-width-lg: 1220px;
 $break-width-xl: 1750px;
 
 /* Navbar */
-$nav-bar-height: 64px;
-$nav-bar-height-mobile: 90px;
-$nav-bar-height-xs: 140px;
-$nav-bar-padding: 16px;
-$nav-bar-margin: $nav-bar-height + 8px + $nav-bar-padding;
-$nav-bar-margin-md: $nav-bar-height-mobile + 8px + $nav-bar-padding;
-$nav-bar-margin-xs: $nav-bar-height-xs + 8px + $nav-bar-padding;
+$navbar-height: 64px;
+$navbar-height-mobile: 90px;
+$navbar-height-xs: 140px;
+$navbar-padding: 16px;
+$navbar-margin: $navbar-height + 8px + $navbar-padding;
+$navbar-margin-md: $navbar-height-mobile + 8px + $navbar-padding;
+$navbar-margin-xs: $navbar-height-xs + 8px + $navbar-padding;
+$navbar-logo-size: 52px;
 
 $cover-size: 320px;
 $cover-size-xs: $cover-size /2;
