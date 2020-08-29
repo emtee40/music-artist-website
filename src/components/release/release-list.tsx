@@ -6,10 +6,12 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronDown, faChevronUp} from "@fortawesome/free-solid-svg-icons";
 import {TFunction} from "i18next";
 import {Release} from "../../types/release/release";
+import {Artist} from "../../types/artist/artist";
 
 type Props = {
     t: TFunction
     releases: Array<Release>
+    artist: Artist
 }
 
 function ReleaseList(props: Props) {
@@ -35,20 +37,24 @@ function ReleaseList(props: Props) {
     }
 
     return (
-        <div className={'release-list-wrapper'}>
-            <button onClick={toggleSort} className={'release-sort-btn'}
-                    aria-label={t('aria:sort-button-pre') + (sortDesc ? t('aria:sort-button-desc') : t('aria:sort-button-asc'))}>
-                <FontAwesomeIcon icon={sortDesc ? faChevronDown : faChevronUp}/>
-            </button>
-            <ul className={'releases'}>
-                {sortedData.map((release: Release, idx: number) => {
-                    return (
-                        <li key={idx}>
-                            <ReleaseLink t={t} release={release}/>
-                        </li>
-                    );
-                })}
-            </ul>
+        <div className={'release-list'}>
+            <h3>{t('releases-by') + props.artist.name}
+                <button onClick={toggleSort} className={'release-sort-btn'}
+                        aria-label={t('aria:sort-button-pre') + (sortDesc ? t('aria:sort-button-desc') : t('aria:sort-button-asc'))}>
+                    <FontAwesomeIcon icon={sortDesc ? faChevronDown : faChevronUp}/>
+                </button>
+            </h3>
+            <div className={'release-list__inner'}>
+                <ul className={'releases'}>
+                    {sortedData.map((release: Release, idx: number) => {
+                        return (
+                            <li key={idx}>
+                                <ReleaseLink t={t} release={release}/>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
         </div>
     );
 }
