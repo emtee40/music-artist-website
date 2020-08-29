@@ -20,6 +20,5 @@ i18n.use(Backend)
         }
     }).then(() => {});
 
-
 // noinspection JSUnusedGlobalSymbols
 export default i18n;

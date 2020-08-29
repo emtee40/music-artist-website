@@ -24,10 +24,12 @@ function PrivacyPage(props: Props) {
         <div className={'privacy wrapper'}>
             <ScrollToTop/>
             <h1>{t('privacy')}</h1>
-            <p>{t('content:privacy-paragraph-1')}</p>
-            <p>{t('content:privacy-paragraph-2')}</p>
-            <p>{t('content:privacy-paragraph-3')}</p>
-            <p>{t('content:privacy-paragraph-4')}</p>
+            <div className="privacy">
+                <p>{t('content:privacy-paragraph-1')}</p>
+                <p>{t('content:privacy-paragraph-2')}</p>
+                <p>{t('content:privacy-paragraph-3')}</p>
+                <p>{t('content:privacy-paragraph-4')}</p>
+            </div>
         </div>
     );
 }

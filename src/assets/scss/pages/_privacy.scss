@@ -2,5 +2,14 @@ div.privacy.wrapper {
   max-width: 80%;
   margin: 0 auto;
 
-  text-align: start;
+  .privacy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    p {
+      text-align: start;
+    }
+  }
 }
