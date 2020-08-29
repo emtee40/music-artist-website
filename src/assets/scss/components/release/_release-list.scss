@@ -36,6 +36,14 @@ div.release-list {
         grid-template-columns: 352px;
       }
 
+      &.less {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+
       li {
         margin-left: 16px;
         margin-right: 16px;

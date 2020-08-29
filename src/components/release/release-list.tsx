@@ -51,7 +51,7 @@ function ReleaseList(props: Props) {
                 <h1>{t('all-releases')}{button}</h1>
             }
             <div className={'release-list__inner'}>
-                <ul className={'releases'}>
+                <ul className={'releases ' + ((sortedData.length <= 2) ? 'less' : '')}>
                     {sortedData.map((release: Release, idx: number) => {
                         return (
                             <li key={idx}>
