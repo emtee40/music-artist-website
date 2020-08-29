@@ -11,7 +11,7 @@ import {Artist} from "../../types/artist/artist";
 type Props = {
     t: TFunction
     releases: Array<Release>
-    artist: Artist
+    artist?: Artist
 }
 
 function ReleaseList(props: Props) {
@@ -36,14 +36,20 @@ function ReleaseList(props: Props) {
         setSortDesc(!sortDesc);
     }
 
+    const sortLabel = t('aria:sort-button-pre') +
+        (sortDesc ? t('aria:sort-button-desc') : t('aria:sort-button-asc'));
+
+    const button = <button onClick={toggleSort} className={'release-sort-btn'} aria-label={sortLabel}>
+        <FontAwesomeIcon icon={sortDesc ? faChevronDown : faChevronUp}/>
+    </button>;
+
     return (
         <div className={'release-list'}>
-            <h3>{t('releases-by') + props.artist.name}
-                <button onClick={toggleSort} className={'release-sort-btn'}
-                        aria-label={t('aria:sort-button-pre') + (sortDesc ? t('aria:sort-button-desc') : t('aria:sort-button-asc'))}>
-                    <FontAwesomeIcon icon={sortDesc ? faChevronDown : faChevronUp}/>
-                </button>
-            </h3>
+            {
+                props.artist &&
+                <h3>{t('releases-by') + props.artist.name}{button}</h3> ||
+                <h1>{t('all-releases')}{button}</h1>
+            }
             <div className={'release-list__inner'}>
                 <ul className={'releases'}>
                     {sortedData.map((release: Release, idx: number) => {

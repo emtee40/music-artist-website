@@ -25,7 +25,6 @@ function ReleasesPage(props: Props) {
     return (
         <div className={'wrapper'}>
             <ScrollToTop/>
-            <h1>{t('all-releases')}</h1>
             <ReleaseList t={t} releases={props.data.releases}/>
         </div>
     );

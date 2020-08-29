@@ -43,10 +43,8 @@ div.release-list {
     }
   }
 
-  h3 {
-    button.release-sort-btn,
-    button.release-sort-btn:focus,
-    button.release-sort-btn:active {
+  h3, h1 {
+    button.release-sort-btn {
       margin-top: 32px;
       margin-left: 16px;
       background: transparent;
