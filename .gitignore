@@ -30,3 +30,6 @@ dist
 .cache
 
 *.zip
+
+report.html
+
