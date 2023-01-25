@@ -60,4 +60,4 @@ magick mogrify -verbose -path sm -resize 50% -quality 100 md/*.jpeg
 magick mogrify -verbose -path xs -resize 50% -quality 100 sm/*.jpeg
 ```
 
-The images should also be optimized manually.
+The images should also be optimized manually (for example using ImageOptim).

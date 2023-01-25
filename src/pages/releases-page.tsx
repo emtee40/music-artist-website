@@ -1,9 +1,9 @@
 import React from 'react';
 import ScrollToTop from "../components/scroll-to-top";
 import ReleaseList from "../components/release/release-list";
-import {useMatomo} from "@datapunt/matomo-tracker-react";
 import {TFunction} from "i18next";
 import {Data} from "../types/data";
+import {useMatomo} from "@jonkoops/matomo-tracker-react";
 
 type Props = {
     t: TFunction,

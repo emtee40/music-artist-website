@@ -48,7 +48,7 @@ function ReleaseList(props: Props) {
             {
                 props.artist &&
                 <h3>{t('releases-by') + props.artist.name}{button}</h3> ||
-                <h1>{t('all-releases')}{button}</h1>
+                <h1><>{t('all-releases')}{button}</></h1>
             }
             <div className={'release-list__inner'}>
                 <ul className={'releases ' + ((sortedData.length <= 2) ? 'less' : '')}>

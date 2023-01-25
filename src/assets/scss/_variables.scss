@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $blur: blur(8px);
 
 /* Breakpoints */
@@ -18,6 +20,6 @@ $navbar-margin-xs: $navbar-height-xs + 8px + $navbar-padding;
 $navbar-logo-size: 52px;
 
 $cover-size: 320px;
-$cover-size-xs: $cover-size /2;
+$cover-size-xs: math.div($cover-size, 2);
 
 $artist-link-width: 320px;

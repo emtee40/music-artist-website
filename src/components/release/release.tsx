@@ -4,12 +4,12 @@ import ReleaseMeta from "./release-meta";
 import ReleaseLinks from "./release-links";
 import ReleaseTracks from "./release-tracks";
 import {TFunction} from "i18next";
-import {Release} from "../../types/release/release";
+import {Release as TRelease} from "../../types/release/release";
 import {Data} from "../../types/data";
 
 type Props = {
     t: TFunction
-    release: Release
+    release: TRelease
     data: Data
 }
 

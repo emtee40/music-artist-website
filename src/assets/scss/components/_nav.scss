@@ -13,7 +13,7 @@ nav {
   align-items: center;
   z-index: 80;
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
   backdrop-filter: $blur;
 
   @media (max-width: $break-width-md) {
@@ -52,7 +52,7 @@ nav {
     list-style-type: none;
     padding: 0;
 
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;

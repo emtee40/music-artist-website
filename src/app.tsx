@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {Route, Switch} from "react-router";
 import {useTranslation} from 'react-i18next';
-import {useMatomo} from '@datapunt/matomo-tracker-react';
 import {getRandomInt} from "./util";
 import {Data} from "./types/data";
 import ErrorView from "./components/error-view";
 import ScrollToTop from "./components/scroll-to-top";
+import {useMatomo} from "@jonkoops/matomo-tracker-react";
 
 const Nav = React.lazy(() => import('./components/nav'));
 const Loader = React.lazy(() => import('./components/loader'));
@@ -41,8 +41,8 @@ function App() {
             .catch((error) => {
                 setError(error);
                 setLoading(false);
-            })
-    }, [])
+            });
+    }, []);
 
     return (
         <>

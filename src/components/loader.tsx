@@ -1,5 +1,5 @@
 import React from 'react';
-import KFLogo from '../assets/images/logo.svg';
+import KFLogo from 'jsx:../assets/images/logo.svg';
 import {TFunction} from "i18next";
 
 type Props = {

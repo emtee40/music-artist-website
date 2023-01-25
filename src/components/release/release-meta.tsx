@@ -21,17 +21,17 @@ function ReleaseMeta(props: Props) {
 
     return (
         release && <div className={'release-meta__wrapper'}>
-            <h2>{t('meta')}</h2>
+            <h2><>{t('meta')}</></h2>
             <dl className={'release-meta'}>
-                <dt>{t('title')}</dt>
+                <dt><>{t('title')}</></dt>
                 <dd>{release.title}</dd>
-                <dt>{t('artists')}</dt>
+                <dt><>{t('artists')}</></dt>
                 <dd><ArtistList t={t} data={props.data} artists={release.artists}/></dd>
-                <dt>{t('genres')}</dt>
+                <dt><>{t('genres')}</></dt>
                 <dd>{release.genres.join(', ')}</dd>
-                <dt>{t('copyright')}</dt>
+                <dt><>{t('copyright')}</></dt>
                 <dd>&copy; {release.copyright}</dd>
-                <dt>{t('release-date')}</dt>
+                <dt><>{t('release-date')}</></dt>
                 <dd>{release.date + ' (' + releaseDistanceString + ')'}</dd>
             </dl>
         </div>

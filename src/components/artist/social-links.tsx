@@ -1,7 +1,7 @@
 import React from 'react';
 import {TFunction} from "i18next";
 import {Artist} from "../../types/artist/artist";
-import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {useMatomo} from "@jonkoops/matomo-tracker-react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 import {faGoogle, faMastodon, faSoundcloud, faYoutube} from "@fortawesome/free-brands-svg-icons";

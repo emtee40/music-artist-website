@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollToTop from "../components/scroll-to-top";
-import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {useMatomo} from "@jonkoops/matomo-tracker-react";
 import {TFunction} from "i18next";
 
 type Props = {
@@ -23,12 +23,12 @@ function PrivacyPage(props: Props) {
     return (
         <div className={'privacy wrapper'}>
             <ScrollToTop/>
-            <h1>{t('privacy')}</h1>
+            <h1><>{t('privacy')}</></h1>
             <div className="privacy">
-                <p>{t('content:privacy-paragraph-1')}</p>
-                <p>{t('content:privacy-paragraph-2')}</p>
-                <p>{t('content:privacy-paragraph-3')}</p>
-                <p>{t('content:privacy-paragraph-4')}</p>
+                <p><>{t('content:privacy-paragraph-1')}</></p>
+                <p><>{t('content:privacy-paragraph-2')}</></p>
+                <p><>{t('content:privacy-paragraph-3')}</></p>
+                <p><>{t('content:privacy-paragraph-4')}</></p>
             </div>
         </div>
     );

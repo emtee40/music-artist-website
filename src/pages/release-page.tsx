@@ -1,10 +1,10 @@
 import React from 'react';
 import ReleaseComponent from "../components/release/release";
-import {Release} from "../types/release/release"
+import {Release as TRelease} from "../types/release/release"
 import ScrollToTop from "../components/scroll-to-top";
-import {useMatomo} from "@datapunt/matomo-tracker-react";
 import {TFunction} from "i18next";
 import {Data} from "../types/data";
+import {useMatomo} from "@jonkoops/matomo-tracker-react";
 
 type Props = {
     t: TFunction,
@@ -22,7 +22,7 @@ function ReleasePage(props: Props) {
         return null;
     }
 
-    const release = releases.find((rel: Release) => rel.ean === ean);
+    const release = releases.find((rel: TRelease) => rel.ean === ean);
     const {trackPageView} = useMatomo();
 
     if (!release) {

@@ -1,0 +1,36 @@
+image: node:lts-bullseye
+
+stages:
+  - build
+  - lint
+  - test
+
+before_script:
+  - npm config set @kratzen-und-fauchen:registry https://${CI_SERVER_HOST}/api/v4/packages/npm/
+  - npm config set -- '//${CI_SERVER_HOST}/api/v4/packages/npm/:_authToken' "${CI_JOB_TOKEN}"
+  - npm install
+
+build-job:
+  stage: build
+  script:
+    - npm install
+    - npm run clean
+    - npm run build
+
+lint-test-job:
+  stage: lint
+  script:
+    - npm install
+    - npx eslint ./
+
+unit-test-job:
+  stage: test
+  script:
+    - npm install
+    - npm run test
+  artifacts:
+    when: always
+    paths:
+      - junit.xml
+    reports:
+      junit: junit.xml

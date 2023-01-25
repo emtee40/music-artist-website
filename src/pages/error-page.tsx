@@ -2,6 +2,8 @@ import React, {Component, ErrorInfo} from 'react';
 import ErrorView from "../components/error-view";
 import ScrollToTop from "../components/scroll-to-top";
 import {TFunction} from "i18next";
+import {Simulate} from "react-dom/test-utils";
+import error = Simulate.error;
 
 type Props = {
     t: TFunction
@@ -31,6 +33,7 @@ export default class ErrorPage extends Component<Props, State> {
 
     render() {
         if (this.state.hasError) {
+            console.error(this.state.error);
             return (
                 <div className={'wrapper'}>
                     <ScrollToTop/>

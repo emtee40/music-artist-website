@@ -17,22 +17,22 @@ function ReleaseTracks(props: Props) {
 
     return (
         release && <div className="release-tracks-wrapper">
-            <h2>{t('tracks')}</h2>
+            <h2><>{t('tracks')}</></h2>
             <ol className={'release-tracks'}>
                 {release.tracks && release.tracks.map((track, idx) => {
                     return (
                         <li key={idx} className={'release-track'}>
                             <dl className={'track-meta'}>
                                 <dd aria-label={t('track-no') + ': ' + (idx + 1)}>{idx + 1}</dd>
-                                <dt>{t('title')}</dt>
+                                <dt><>{t('title')}</></dt>
                                 <dd>{track.title}&nbsp;({track.version})</dd>
-                                <dt>{t('artist_s')}</dt>
+                                <dt><>{t('artist_s')}</></dt>
                                 <dd><ArtistList t={t} data={props.data} artists={release.artists}/></dd>
-                                <dt>{t('isrc')}</dt>
+                                <dt><>{t('isrc')}</></dt>
                                 <dd>{track.isrc}</dd>
-                                <dt>{t('copyright')}</dt>
+                                <dt><>{t('copyright')}</></dt>
                                 <dd>&copy;&nbsp;{track.copyright}</dd>
-                                <dt>{t('sound-recording')}</dt>
+                                <dt><>{t('sound-recording')}</></dt>
                                 <dd>{'\u2117'}&nbsp;{track.recording}</dd>
                             </dl>
                         </li>

@@ -22,12 +22,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# JetBrains 
+# JetBrains
 .idea
 *.iml
 
 dist
 .cache
+.parcel-cache
 
 *.zip
 

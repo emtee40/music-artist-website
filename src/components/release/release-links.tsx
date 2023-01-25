@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {useMatomo} from "@jonkoops/matomo-tracker-react";
 import {
     faAmazon,
     faDeezer,
@@ -35,7 +35,7 @@ function ReleaseLinks(props: Props) {
 
     return (
         <div className={'release-links__wrapper'}>
-            <h2>{t('links')}</h2>
+            <h2><>{t('links')}</></h2>
             <ul className="release-links">
                 {(release.links.apple !== null) &&
                 <li>

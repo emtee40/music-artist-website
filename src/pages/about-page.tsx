@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMatomo } from '@datapunt/matomo-tracker-react'
+import { useMatomo } from '@jonkoops/matomo-tracker-react'
 import ScrollToTop from "../components/scroll-to-top";
 import {TFunction} from "i18next";
 
@@ -22,8 +22,8 @@ function AboutPage(props: Props) {
     return (
         <div className={'wrapper'}>
             <ScrollToTop/>
-            <h1>{t('about')}</h1>
-            <p className={'about-text'}>{t('content:about')}</p>
+            <h1><>{t('about')}</></h1>
+            <p className={'about-text'}><>{t('content:about')}</></p>
         </div>
     );
 }
