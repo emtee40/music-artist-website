@@ -23,7 +23,10 @@ function AboutPage(props: Props) {
         <div className={'wrapper'}>
             <ScrollToTop/>
             <h1><>{t('about')}</></h1>
-            <p className={'about-text'}><>{t('content:about')}</></p>
+            <p className={'about-text'}><>{t('content:about_1')}</></p>
+            <p className={'about-text'}><>{t('content:about_2')}</></p>
+            <p className={'about-text'}><>{t('content:about_3')}</></p>
+            <p className={'about-text'}><>{t('content:about_4')}</></p>
         </div>
     );
 }
